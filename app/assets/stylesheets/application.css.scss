@@ -17,7 +17,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+.menu {
+	text-align: center;
+	color: red;
+	padding: 11px;
+}
 
 
 
@@ -59,10 +63,12 @@
 
 .nav {
 	background-color: black;
+	/*font-family: 'Tangerine', serif;*/
 	width: 100%;
+
 	/*border: solid green;*/
-	font-size: 14px;
-	font-weight: 900;
+	font-size: 16px;
+	font-weight: 10;
 	position: fixed;
 /*	position: relative;*/
 	/*padding: 0px 0px 0px 20px;*/
@@ -72,6 +78,10 @@
 	/*text-align: center;*/
 	/*padding: 20px 0px 20px 0px;*/
 }
+
+/*.header {
+	text-align: center;
+}*/
 
 .nav > li > a {
 	color: green;

@@ -6,59 +6,50 @@
  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
  *
  *= require_tree .
  *= require_self
  */
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.menu {
-	text-align: center;
-	color: red;
-	padding: 11px;
+
+html {
+	// background-image: url(/assets/jheader.jpg);
+	background-color: black;
+
 }
 
 
-
-
-/*.logo {
-	color: red;
-	float: left;
-	
-	padding: 10px 0px 10px 5px;
-	font-size:  16px;
+.food-menu {
+	padding: 30px;
+	padding-left: 0px;
+	color: green;
 	font-weight: bold;
-	font-family: 'Tangerine', serif;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: none;
-
+	font-size: 14px;
+	list-style-type: none;
+	position: relative;
+	width:200px; 
+	height:200px;
 }
 
-
-.logo > a {
-	text-decoration: none;
-	color: black;
-}  */
-
-.banner {
-	width: 100%;
-	display: block;
-
-
+.food-hover > span {
+	position: absolute;
+	visibility: hidden;
 }
 
-
-.banner > .banner-image {
-	width: 100%;
-	
-	
+.food-hover:hover, .food-hover:hover span {
+	visibility: visible;
+	top: 0; 
+	left: 250px;
+	z-index: 1;
 }
+
 
 
 .nav {
@@ -93,14 +84,6 @@
 }
 
 
-/*.nav > li {
-	display: inline-block
-
-}*/
-
-
-
-
 #footer li {
 	display: inline;
 }
@@ -127,61 +110,7 @@
 	font-weight: 900;
 }
 
-/*#hr {
-	border-top: red;
-    border-width: 100%;
-    border-style: none;
-    border-color: red;
-}*/
-
-
 
 a:link {
     color: black;
 }
-
-
-/*a:visited {
-    color: red;
-}*/
-
-
-/*#hover a:hover {
-	color: black;
-}*/
-
-
-
-
-/*.header {
-	top: 0px;
-}*/
-
-/*.img-container {
-	background-image: url(https://lh3.googleusercontent.com/VLTYuCJh0z7u4SSKnWN1a5AK5LOHRpn755m_8Nl4SlVWTqaBj7gf3M-wIj__zT1aHwOR3k7ZN5Ld0GlGbu_z6KcATsP2weSNrabSYrnByCyCdocPs5TKlMTgWJ5WXW7-7_dBzOTp2Q);
-	height: 70%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	border: solid red;
-}*/
-
-/*.btn {
-	display: inline-block;
-	width: 200px;
-	font-weight: bold;
-	padding: 10px;
-	color: #fff;
-	border: 4px solid #fff;
-	text-align: center;
-	outline: none;
-	text-decoration: none;
-	transition: background-color 0.2s ease-out, color -.2s ease-out;
-}
-*/
-
-
-/*a:active {
-    color: yellow;
-}*/

@@ -1,0 +1,97 @@
+.grid {
+	display: grid;
+	grid-template-columns: 63% 37%;
+	background-color: black;
+	grid-gap:2em;
+
+	// grid-auto-rows: 70px;
+}
+
+
+.food-menu {
+	padding: 30px;
+	padding-left: 0px;
+	color: green;
+	font-weight: bold;
+	font-size: 14px;
+	list-style-type: none;
+	position: relative;
+	width:200px; 
+	height:200px;
+}
+
+.food-hover > span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.food-hover:hover, .food-hover:hover span {
+	visibility: visible;
+	top: 35px; 
+	left: 175px;
+	z-index: 1;
+}
+
+.food-thumb-size {
+	border: solid 4px green;
+	width: 400px;
+	height: 300px;
+}
+
+
+
+.seasonal-drinks {
+	background-color: black;
+	color: green;
+	margin: 30px;
+	font-weight: bold;
+	// padding: 2px;
+	// border: red;
+
+
+}
+
+.seasonal-drinks > h1 {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin: 25px
+}
+
+.seasonal-drinks > p {
+	text-align: center;
+	// border: red;
+}
+
+
+
+
+
+
+.regular-drink-menu {
+	background-color: black;
+	margin: 30px;
+	text-align: center;
+	padding: 10px;
+	border: solid green 2px;
+}
+
+.regular-drink-menu > h1 {
+	color: green;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.regular-drink-menu > p {
+	color: green;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+

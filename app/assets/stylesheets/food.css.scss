@@ -9,6 +9,8 @@
 
 
 .food-menu {
+
+	// text-align: center;
 	padding: 30px;
 	padding-left: 0px;
 	color: green;
@@ -27,13 +29,16 @@
 
 .food-hover:hover, .food-hover:hover span {
 	visibility: visible;
-	top: 45px; 
+	top: 60px;
+
+
 	left: 175px;
 	z-index: 1;
 }
 
 .food-thumb-size {
 	border: solid 4px green;
+	border-radius: 12%;
 	width: 400px;
 	height: 300px;
 }
@@ -41,6 +46,9 @@
 
 
 .seasonal-drinks {
+	// position: relative;
+
+	// border: solid red 3px;
 	background-color: black;
 	color: green;
 	margin: 30px;
@@ -52,6 +60,7 @@
 }
 
 .seasonal-drinks > h1 {
+
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
@@ -63,16 +72,24 @@
 	// border: red;
 }
 
+.cocktail-links {
+	text-align: center;
+	// border: solid orange 2px;
+	padding: 0px 0px 0px 0px;
+}
+
 
 
 
 
 
 .regular-drink-menu {
+	position: absolute;
+	top: 400px;
 	background-color: black;
 	margin: 30px;
 	text-align: center;
-	padding: 10px;
+	padding: 40px;
 	border: solid green 2px;
 }
 

@@ -1,0 +1,51 @@
+.about-wrapper {
+	display: grid;
+	grid-template-columns: 4fr 4fr 4fr;
+	background-color: black;
+	// grid-gap: 0.5em;
+
+}
+
+.about-container {
+
+	color: white;
+	font-size: 14px;
+	padding: 20px;
+	position: relative;
+	top: 40px;
+	border: solid green 2px;
+
+	margin: 3px;
+	// z-index: 1;
+}
+
+
+.about-titles {
+	// position: relative;
+	// left: 80px;;
+	font-size: 20px;
+	color: green;
+	// text-align: center;
+
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:60.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+
+// .about > h1 {
+// 	margin: 5px;
+// 	color: red;
+// }

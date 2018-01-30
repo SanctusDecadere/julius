@@ -1,63 +1,62 @@
-
-
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 
 
+html {
+	background-color:black;
+
+	// height:100%;
+
+	// padding:0px;
+	// margin:0px;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+	// background-size: 100%;
+	// background-repeat: no-repeat;
+	// min-height:100%;
+}
 
 
 
 .front-page > img {
-	// padding: 10px 30px 0px 30px;
-	// border-radius: 50px;
-	position: absolute;
+	
+	position: relative;
 	top: 0px;
 	max-width:100%;
+	min-width:100%;
 	z-index:0;
 }
 
-.nav {
-	background-color: black;
-	// font-family: 'Tangerine', serif;
-	// font-family: 'Marck Script', serif;
-	width: 100%;
+// .nav {
+// 	background-color: black;
+// 	width: 100%;
+// 	font-size: 16px;
+// 	font-weight: 10;
+// 	position: fixed;
+// 	z-index: 1;
 
-	/*border: solid green;*/
-	font-size: 16px;
-	font-weight: 10;
-	position: fixed;
-	z-index: 1;
-
-}
+// }
 
 .nav > li > a {
 	color: green;
-	// background-color: orange;
 	font-weight: bold;
 	font-size: 13px;
 }
 
-// .nav > li {
-// // 	position: relative;
-// // 	text-align: center;
 
-// // }
-
-
-.nav > li > a:hover {
-	color: green;
-}
+// .nav > li > a:hover {
+// 	color: green;
+// }
 
 .nav-link > img {
-
 	border: solid green 1px;
 	width: 55px;
 	height: 55px;
-	// border-radius: 25%;
 }
-
 
 
 #contact-tab {
@@ -120,21 +119,6 @@ a:link {
 }
 
 
-
-body {
-	margin: 0;
-    padding: 0;
-
-
-	/*background:url(./washingtonsquare.jpg);*/
-	// position: relative;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	// background-image: url(https://lh3.googleusercontent.com/DiW-y5kPi8UKE2zPgS-IDFX-o5-I9ws5zA2ewiz_CMMQzjGiBe5PF_AZwq1vJw5uQxlyDeGKe6Yz_lFNVN9bwGeXQ3D63DiFL6X7A9ZNjMj8mGIw5Vnw0Pp3wIxVKIZTsHVl6Qhm_A);
-	// z-index: 1;
-	
-}
-
 nav {
 	position:absolute;
 	top:0px;
@@ -143,10 +127,17 @@ nav {
 }
 
 nav ul {
-	display:inline-block;
-	position: absolute;
-	padding: 0px;
+  list-style: none;
+  margin: 15px 1px 1px 1px;
+  // top: 40px;
 
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+
+	// display:inline-block;
+	position: absolute;
+	padding: 4px;
 	background:linear-gradient(90deg,
 		rgba(10, 30, 10, 0.5)0%,
 		rgba(0, 22, 0, 1.2)25%,
@@ -156,24 +147,25 @@ nav ul {
 	box-shadow: 0px 0px 25px rgba(0,0,0,1.1),
 	inset 0px 0px 10px rgba(25, 144, 25, 1.6);
 	z-index:1;
+	width:100%;
 }
 
 
+
+// nav ul{
+//   list-style: none;
+//   margin: 0 2px;
+//   padding: 0;
+//   display: flex;
+//   justify-content: space-around;
+// }
+
 nav ul li {
-	// vertical-align:middle;
-	// list-style:none;
-	// margin:0;
-	// position: relative;
 	padding: 5px;
 	// display:inline-block;
 	display: inline-block;
 	position: relative;
 	z-index:1;
-
-	
-	// width:50%;
-	// text-decoration: none;
-	// text-align: right;
 
 }
 
@@ -181,7 +173,7 @@ nav ul li {
 nav ul li a {
 	color: green;
 	display:block;
-	padding: 2px;
+	padding: 20px;
 	text-decoration:none;
 	font-size: 22px;
 	font-family: 'Marck Script';
@@ -189,6 +181,5 @@ nav ul li a {
 	text-align:center;
 	
 }
-
 
 

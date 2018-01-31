@@ -3,22 +3,132 @@
 	<meta charset="UTF-8">
 	<title>Landing Page</title>
 
-	<!-- <link rel="stylesheet" type="text/css" href="./welcome.scss">. -->
+
+	<style>
+		.indexWrapper {
+		padding:16px;
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		/*grid-template-columns:1fr 2fr 1fr;*/
+		grid-template-rows:minmax(100px, auto);
+		grid-gap:0em;
+		justify-items:stretch;
+		align-items:stretch;
+		background-color:black;
+		color: red;
+	}
+
+	.indexWrapper > div > img {
+		/*background-color:red;*/
+		/*margin: 10px;*/
+		padding:20px;
+		min-width:100%;
+		max-width:100%;
+		/*border: solid green 5px;*/
+	}
+
+
+
+	.mattachine {
+		grid-row:2/3;
+	}
+
+	.mattachine > p {
+		font-family: 'Marck Script';
+		color:green;
+		position:relative;
+		text-align:center;
+		font-size: 24px;
+	}
+
+
+
+
+
+	.owlparty {
+		grid-row:2/3;
+	}
+
+	.owlparty > p {
+		font-family: 'Marck Script';
+		color:green;
+		position:relative;
+		text-align:center;
+		font-size: 24px;
+	}
+
+
+	.specials {
+
+		padding: 20px;
+		border: solid green 2px;
+		border-radius:20%;
+		/*display:inline-block;*/
+		grid-row:3;
+		background-color:black;
+		color: green;
+		/*overflow:scroll;*/
+	}
+
+	.box4 {
+		/*overflow:scroll;*/
+		width:300px;
+		height:300px;
+		grid-row:5;
+		border: solid orange 3px;
+		background-color: blue;
+		color;red;
+	}
+
+
+
+
+	</style>
+
+	<!-- <link rel="stylesheet" type="text/css" href="/../welcome.css.scss"> -->
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script">
 
+	<!-- <link rel="stylesheet" href="../../..welcome.css.scss"> -->
 
 		
 </head>
 
 <body>
 
-
-
-<div class="front-page">
-	<!-- <img src="/assets/oldj.jpg" alt="Old Julius"> -->
-	<!-- <img src="https://lh3.googleusercontent.com/SjxdBO-n_TVbH0IVg9feYncaAJOvhf2EPIRrOfvCO54pEbVbDsDBO6N5Sr0bTC5OLM7TgdBwbMIu_ABzbp-6xebshK_OpuZQvOPiSoVdOCPPwHTN3Tdt0Z8V_wXcLAfTjl6X3W0wVA" alt="julius"> -->
-</div>
+<div class="indexWrapper">
 	
+		<div class="mattachine"><img src="https://lh3.googleusercontent.com/5MYgpuWFTsH-CQlsMb34_4pH8gn6HOKI42S_aIJubWiMpC-l3Z3D1LalMivl9_TiSWq1nEtzSMb35g6xW_aM4vRI7Afe1srhN3fRTlHMAITdZBj_bDQA-MS6D5x3pUq0LRlMRWxIKg" alt="mattachine"><p>Join Julius' for our monthly Mattachine Party Thursday February 1, 2018 @ 10:00 PM!!!</p></div>
+
+
+		<div class="owlparty"><img src="https://lh3.googleusercontent.com/QPvF0cUD6a5GBHTDRlcJ1JKMH2WAp9FliF0i8Jh42MOeYGw6r5ux0jLH4GmDQW4su1mgMLGog1e1bqfkzFn6He9i653aNnWlbLLwpWm-Yd3uLwDuxGXp9NY0M-_Dw6zlTdWlFUwX_A" alt="owl"><p>Join Julius' for the Owl Party Thursday February 15, 2018 @ 10:00 PM!!!</p></div>
+
+
+		<div class="specials">
+						
+			<p>Monday-Saturday
+
+			Happy Hour Specials 4pm to 9pm
+
+
+			Sunday Beer Blast!
+
+			Sunday Beer Blast!
+			All Beers, tap and bottled $2.00 off regular price.
+
+
+			All day everyday
+
+			All day everyday drink special $6.00 Long Island Ice tea, Sex on the Beach and Lemon Drop shots.</p>
+		</div>
+
+		<div class="box4">Box4</div>
+	
+</div>
+
+
+<div><br><br><br><br></div>
+
+
 </body>
 </html>

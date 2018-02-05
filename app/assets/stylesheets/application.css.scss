@@ -123,4 +123,38 @@ a:link {
 	height: 55px;
 }
 
+.nav-item > .icon {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-item > a:not(:first-child) {display: none;}
+  .nav-item > a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+// This rule effects the icon img for drop down menu.
+@media screen and (max-width: 600px) {  
+  .nav-item.responsive {position: relative;}
+  .nav-item.responsive a.icon {
+    position: absolute;
+    right: 0px;
+    top: 0;
+  }
+
+
+  // This rule effects all links texts in the responsive version so they align left.
+  .nav-item.responsive a {
+
+    float: none;
+    display:block;
+    text-align: left;
+  }
+}
+
+
+
+
 

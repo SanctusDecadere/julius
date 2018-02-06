@@ -80,7 +80,7 @@ a:link {
 	list-style: none;
 	margin: 15px 1px 1px 1px;
 	padding: 0;
-	display: flex;
+	// display: flex;
 	justify-content: space-around;
 	position: absolute;
 	padding: 4px;
@@ -94,7 +94,7 @@ a:link {
 	box-shadow: 0px 0px 25px rgba(0,0,0,1.1),
 	inset 0px 0px 10px rgba(25, 144, 25, 1.6);
 	
-	z-index:1;
+	z-index:0;
 	width:100%;
 }
 
@@ -119,8 +119,12 @@ a:link {
 
 .nav-item > a > img {
 	border: solid green 1px;
+	// display: inline-block;
 	width: 55px;
 	height: 55px;
+
+	position: relative;
+	z-index: 1;
 }
 
 .nav-item > .icon {
@@ -129,9 +133,14 @@ a:link {
 
 @media screen and (max-width: 600px) {
   .nav-item > a:not(:first-child) {display: none;}
+
   .nav-item > a.icon {
-    float: right;
+  	top: 10px;
+  	right: 10px;
+  	position: absolute;
+    float:right;
     display: block;
+    text-align: right;
   }
 }
 
@@ -142,15 +151,32 @@ a:link {
     position: absolute;
     right: 0px;
     top: 0;
+    text-align: right;
   }
 
 
   // This rule effects all links texts in the responsive version so they align left.
   .nav-item.responsive a {
+  	border: solid green 1px;
 
     float: none;
-    display:block;
-    text-align: left;
+    display:inline-block;
+    text-align:left;
+
+    background-color:black;
+    // position: absolute;
+    // z-index: 1;
+
+
+  }
+
+  .nav-item.responsive > a:first-child {
+  	float: none;
+  	display: inline-block;
+  	text-align: left;
+
+  	// position: relative;
+  	// z-index: 1;
   }
 }
 

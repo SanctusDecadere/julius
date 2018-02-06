@@ -99,15 +99,17 @@ a:link {
 }
 
 
+
 .nav-item > a {
 	color: green;
-	display:block;
+	display: inline;
 	padding: 20px;
 	text-decoration:none;
-	font-size: 22px;
+	font-size: 24px;
 	font-family: 'Marck Script';
 	width:100%;
 	text-align:center;
+	// justify-content: space-around;
 	
 }
 
@@ -157,7 +159,7 @@ a:link {
 
   // This rule effects all links texts in the responsive version so they align left.
   .nav-item.responsive a {
-  	border: solid green 1px;
+  	// border: solid green 1px;
 
     float: none;
     display:inline-block;

@@ -133,9 +133,12 @@ a:link {
 	display: none;
 }
 
+.nav-address {
+	display:none;
+}
+
 @media screen and (max-width: 600px) {
   .nav-item > a:not(:first-child) {display: none;}
-
   .nav-item > a.icon {
   	top: 10px;
   	right: 10px;
@@ -143,6 +146,18 @@ a:link {
     float:right;
     display: block;
     text-align: right;
+  }
+
+  .nav-address {
+  	padding: 15px;
+  	position: relative;
+  	left: 5%;
+  	font-size: 12px;
+  	// position: relative;
+  	display: inline-block;
+  	// text-align: center;
+  	// background-color:black;
+  	color:white;
   }
 }
 

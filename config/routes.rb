@@ -1,10 +1,24 @@
 Rails.application.routes.draw do
 
-	root "welcome#show", page: "index"
+		root "welcome#index"
 
-	get "/welcome/:page" => "welcome#show"
+		# resources :welcome 
+
+
+
+	# root "welcome#show", page: "index"
+
+	# get "/welcome/:page" => "welcome#show"
+
+	# get "welcome/gallery"
+
+	get "welcome/index"
+
+	get "welcome/about"
 
 	get "welcome/gallery"
+
+	get "welcome/menu"
 
 
 

@@ -1,7 +1,7 @@
 
 
 
-	<script type="text/javascript">
+	
 	
 		var slider_content = document.getElementById('box');
 
@@ -37,4 +37,7 @@
 
 		// setInterval(nextImage , 5000);
 
-	</script>
+
+
+
+		

@@ -22,11 +22,6 @@ Rails.application.routes.draw do
 
 
 
-Gallery 2
-
-Gallery master
-
-
 
 	# root 'welcome#index'
 

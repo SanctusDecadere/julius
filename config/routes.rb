@@ -22,16 +22,6 @@ Rails.application.routes.draw do
 
 
 
-
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
->>>>>>> gallery
 	# root 'welcome#index'
 
 	# resources :welcome do 

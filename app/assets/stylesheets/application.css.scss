@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 html {
-	background-color:none;
+	background-color:black;
 
 }
 
@@ -101,14 +101,17 @@ a:link {
 
 
 .nav-item > a {
+	position: relative;
 	color: green;
 	display: inline;
 	padding: 20px;
 	text-decoration:none;
 	font-size: 24px;
-	font-family: 'Marck Script';
+	// font-family: 'Marck Script';
+	font-family: 'Krona One';
 	width:100%;
 	text-align:center;
+	z-index: 1;
 	// justify-content: space-around;
 	
 }

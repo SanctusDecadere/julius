@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .grid {
 	display: grid;
 	grid-template-columns: 63% 37%;
@@ -27,14 +41,12 @@
 	visibility: hidden;
 }
 
-.food-hover:hover, .food-hover:hover span {
-	visibility: visible;
-	top: 60px;
-
-
-	left: 175px;
-	z-index: 1;
-}
+// .food-hover:hover, .food-hover:hover span {
+// 	visibility: visible;
+// 	top: 60px;
+// 	left: 175px;
+// 	z-index: 1;
+// }
 
 .food-thumb-size {
 	border: solid 4px green;
@@ -77,10 +89,6 @@
 	// border: solid orange 2px;
 	padding: 0px 0px 0px 0px;
 }
-
-
-
-
 
 
 .regular-drink-menu {

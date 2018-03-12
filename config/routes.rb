@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
 	get "welcome/menu"
 
+	get "welcome/contact"
+
 
 
 	# root 'welcome#index'

@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 
 	get "welcome/contact"
 
+	get "welcome/links"
+
 
 
 	# root 'welcome#index'

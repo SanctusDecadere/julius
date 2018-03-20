@@ -24,6 +24,8 @@ Rails.application.routes.draw do
 
 	get "welcome/links"
 
+	get "welcome/calendar"
+
 
 
 	# root 'welcome#index'

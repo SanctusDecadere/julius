@@ -121,14 +121,15 @@ a:link {
 	color: green;
 	font-weight: bold;
 	font-size: 13px;
+
 }
 
+
+// Nav Bar Julius Logo
 .nav-item > a > img {
 	border: solid green 1px;
-	// display: inline-block;
 	width: 55px;
 	height: 55px;
-
 	position: relative;
 	z-index: 1;
 }
@@ -137,12 +138,19 @@ a:link {
 	display: none;
 }
 
+// Is later set in media query for mobile below
 .nav-address {
 	display:none;
 }
 
 
 
+
+
+
+
+
+// Mobile Media Queries
 
 @media screen and (max-width: 600px) {
   .nav-item > a:not(:first-child) {display: none;}
@@ -155,22 +163,31 @@ a:link {
     text-align: right;
   }
 
+// Adds address to mobile nav bar
   .nav-address {
-  	padding: 15px;
+  	padding: 10px;
   	position: relative;
-  	left: 5%;
+  	left: 2%;
   	font-size: 12px;
-  	// position: relative;
   	display: inline-block;
-  	// text-align: center;
-  	// background-color:black;
+  	background:transparent;
   	color:white;
   }
 }
 
+
+
+
+
+
 // This rule effects the icon img for drop down menu.
 @media screen and (max-width: 600px) {  
-  .nav-item.responsive {position: relative;}
+
+  .nav-item.responsive {
+  	position: relative;
+  	background:black;
+
+  }
   .nav-item.responsive a.icon {
     position: absolute;
     right: 0px;
@@ -181,27 +198,26 @@ a:link {
 
   // This rule effects all links texts in the responsive version so they align left.
   .nav-item.responsive a {
-  	// border: solid green 1px;
-
     float: none;
     display:inline-block;
     text-align:left;
-
     background-color:black;
-    // position: absolute;
-    // z-index: 1;
-
-
+    z-index: 0;
   }
 
+
+// Styling for Julius Logo Image
   .nav-item.responsive > a:first-child {
   	float: none;
   	display: inline-block;
   	text-align: left;
-
-  	// position: relative;
-  	// z-index: 1;
+  	z-index:1;
   }
+
+
+
+
+
 }
 
 

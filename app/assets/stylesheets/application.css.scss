@@ -143,9 +143,6 @@ a:link {
 
 
 
-
-
-
 // Mobile Media Queries
 
 @media screen and (max-width: 600px) {
@@ -174,9 +171,6 @@ a:link {
   	color:white;
 
   }
-
-
-
 
 }
 
@@ -221,11 +215,24 @@ a:link {
   	z-index:1;
   }
 
+}
 
 
+// Media Query small.Adds address to mobile nav bar small
 
+@media screen and (max-width: 360px) {
 
+  .nav-address {
+  	padding: 10px;
+  	position: relative;
+  	left: 4%;
+  	font-size: 6px;
+  	color: red;
+  	display: inline-block;
+  	background:transparent;
+  	color:white;
 
+  }
 }
 
 

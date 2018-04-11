@@ -144,6 +144,7 @@ a:link {
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -169,6 +170,11 @@ a:link {
   }
 
 
+=======
+@media screen and (max-width: 600px) {
+// makes all the links dissapear except for the julius home logo link
+  .nav-item > a:not(:first-child) {display: none;}
+>>>>>>> menu
   .nav-item > a.icon {
     top: 10px;
     right: 10px;
@@ -177,6 +183,7 @@ a:link {
     display: block;
     text-align: right;
   }
+<<<<<<< HEAD
 // Adds address to mobile nav bar
   .nav-address {
     padding: 15px;
@@ -187,6 +194,16 @@ a:link {
     background:transparent;
     color:white;
 
+=======
+// Julius Location Address on Nav
+  .nav-address {
+  	padding: 15px;
+  	position: relative;
+  	left: 5%;
+  	font-size: 12px;
+  	display: inline-block;
+  	color:white;
+>>>>>>> menu
   }
 
   .nav-item.responsive {
@@ -207,8 +224,11 @@ a:link {
     display:inline-block;
     text-align:left;
     background-color:black;
+<<<<<<< HEAD
     z-index: 0;
 
+=======
+>>>>>>> menu
   }
 
 // Styling for Julius Logo Image

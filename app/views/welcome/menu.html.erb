@@ -5,7 +5,6 @@
 </head>
 	<body>
 		<div class="wrap">
-			<div class="container">
 				<div class="food-menu">
 					<ul>
 						<div class="food-container">
@@ -75,11 +74,10 @@
 						<li>
 							<a href="#"> <div class="centered">Chicken Tenders $4</div>
 								<img class="food-thumb-size" src="https://lh3.googleusercontent.com/17p4pYVPdpjHstPyBVWPqo1pVad5zOC-9CY3i9b5WgVC5Ymn5Jyr557POhTILMoHh4lopKgL3LfUpGQe_3CgbBzP2ODwQKgCEMdPfgzL_pEr7gbP3GEB-Jd8QEVGh49U1_n6Q1sfNw=w2400" alt="Chicken Tenders">
-							</a>
+							</a><br><br>
 						</li>
 						</div>
 					</ul>
-				</div>
 			</div>
 
 
@@ -93,7 +91,7 @@
 			</div>
 
 
-			<div class="container">
+			<!-- <div class="container"> -->
 				<div class="drink-menu">
 					<ul><div class="music-container">
 						<li>
@@ -131,12 +129,11 @@
 						<li>
 							<a href="#"><div class="centered">Grasshopper $10</div>
 								<img src="https://lh3.googleusercontent.com/SaTlGxuEuSmivIZYgHI9aEZO7znFMLao0MKQhtLCs1-1aaUdHFhrtsg3dOFj565j2ZKWlD2jwbaHTO4yEeMDNyozKjBFHwbywaHNVMzWLC8kNaVJuOQSxrH-Ijp996S_R0ImbJD19A=w2400" alt="Grasshopper">
-							</a>
+							</a><br><br>
 						</li>
 						</div>
 
 					</ul>
-				</div>
 			</div>
 
 
@@ -164,30 +161,28 @@
 		margin: 1px;
 		background-color: black;
 	}
-	.container {
-		/*display: grid;*/
-		/*grid-template-columns: 1fr 1fr;*/
+
+/*	.container {
 		position: relative;
-		border: solid #210f09 3px;
+		border: solid red 3px;
 		margin: 4px;
 		top: 80px;
-		text-align: center;*
+	}*/
 
+	.food-menu {
+		position: relative;
+		border: solid green 3px;
+		margin: 4px;
+		top: 80px;
 	}
 
 	.food-menu ul li a {
-
-		/*position: absolute;*/
 		position: relative;
-		/*text-align: center;*/
 		text-decoration: none;
 		font-size: 14px;
 		color: white;
 		font-weight: 900;
-		 text-shadow: 2px 2px red;
-
-		/*float: left;*/
-		/*clear: right;*/
+		text-shadow: 2px 2px red;
 		top: -80px;
 		right:20px;
 
@@ -231,16 +226,6 @@
 
 	}
 
-
-	/* Aligns drink items menu on the right */
-	.food-container {
-		position: relative;
-		margin: 4px;
-		top: 100px;
-		text-align: center;
-
-	}
-
 	.music-container {
 		position: relative;
 		margin: 4px;
@@ -249,11 +234,12 @@
 
 	}
 
-
-
-
-
-
+	.drink-menu {
+		position: relative;
+		border: solid green 3px;
+		margin: 4px;
+		top: 80px;
+	}
 
 
 
@@ -320,6 +306,50 @@
 	}
 
 
+
+@media screen and (max-width: 600px) {
+
+		.wrap {
+			/*display: grid;*/
+			grid-template-columns: 1fr 1fr 1fr;
+			/*grid-gap: 2px;*/
+			/*margin: 1px;*/
+			background-color: black;
+	}
+
+		.container {
+			/*position:relative;*/
+			/*border: solid green 3px;*/
+			/*border: solid #210f09 3px;*/
+			/*margin: 4px;*/
+			top: 100px;
+			/*text-align: center;**/
+	}
+
+		.happy-hour-container {
+			grid-column:1;
+			grid-row:1/2;
+			/*position: relative;*/
+			/*border: solid #210f09 3px;*/
+			/*margin: 5px;*/
+			/*top: 90px;*/
+	}
+
+		.food-menu {
+			grid-column:2;
+			top: 100px;
+		}
+
+		.drink-menu {
+			grid-column:3;
+			top: 100px;
+		}
+
+
+
+
+
+}
 
 
 

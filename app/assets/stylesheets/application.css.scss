@@ -141,9 +141,8 @@ a:link {
 }
 
 
-
-
 @media screen and (max-width: 600px) {
+// makes all the links dissapear except for the julius home logo link
   .nav-item > a:not(:first-child) {display: none;}
   .nav-item > a.icon {
   	top: 10px;
@@ -153,16 +152,13 @@ a:link {
     display: block;
     text-align: right;
   }
-
+// Julius Location Address on Nav
   .nav-address {
   	padding: 15px;
   	position: relative;
   	left: 5%;
   	font-size: 12px;
-  	// position: relative;
   	display: inline-block;
-  	// text-align: center;
-  	// background-color:black;
   	color:white;
   }
 }
@@ -177,20 +173,12 @@ a:link {
     text-align: right;
   }
 
-
   // This rule effects all links texts in the responsive version so they align left.
   .nav-item.responsive a {
-  	// border: solid green 1px;
-
     float: none;
     display:inline-block;
     text-align:left;
-
     background-color:black;
-    // position: absolute;
-    // z-index: 1;
-
-
   }
 
   .nav-item.responsive > a:first-child {
@@ -198,8 +186,6 @@ a:link {
   	display: inline-block;
   	text-align: left;
 
-  	// position: relative;
-  	// z-index: 1;
   }
 }
 

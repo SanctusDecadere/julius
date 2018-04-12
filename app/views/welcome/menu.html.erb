@@ -86,7 +86,7 @@
 					<h1>Julius Happy Hour!</h1>
 					<p>*** Happy Hour Specials 4pm - 9pm, Monday - Saturday! ***</p>
 					<p>*** Sunday Beer Blast! All Tap and Bottled Beer $2 Off! ***</p>
-					<p>*** All Day Long Island Iced Tea Special for $6! ***</p>
+					<p>*** All Day Long Island Iced Tea Special for $6! ***</p><br><br><br>
 				</div>
 			</div>
 
@@ -345,11 +345,73 @@
 			top: 100px;
 		}
 
+}
 
 
 
+
+
+
+
+@media screen and (max-width: 445px) {
+
+
+
+		.wrap {
+			/*display: grid;*/
+			grid-template-columns: 1fr;
+			/*grid-gap: 2px;*/
+			/*margin: 1px;*/
+			background-color:black;
+	}
+
+		.container {
+			/*position:relative;*/
+			/*border: solid green 3px;*/
+			/*border: solid #210f09 3px;*/
+			/*margin: 4px;*/
+			top: 100px;
+			/*text-align: center;**/
+	}
+
+		.happy-hour-container {
+			grid-column:1;
+			grid-row:2/2;
+			/*position: relative;*/
+			/*border: solid #210f09 3px;*/
+			/*margin: 5px;*/
+			top: 150px;
+			
+
+
+	}
+
+		.food-menu {
+			grid-column:1;
+			top: 160px;
+		}
+
+		.drink-menu {
+			grid-column:2;
+			top: 160px;
+		}
+
+		.regular-drink-menu {
+		/*position: absolute;*/
+		
+		/*background-color: black;*/
+		/*margin: 10px;*/
+		width: 350px;
+
+		/*text-align: center;*/
+		/*padding: 20px;*/
+		/*border: solid green 2px;*/
+	}
 
 }
+
+
+
 
 
 

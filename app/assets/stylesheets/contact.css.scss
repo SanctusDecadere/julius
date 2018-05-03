@@ -1,8 +1,127 @@
-.contact-grid {
-	margin: 60px;
-	padding: 20px;
+// .contact-grid {
+// 	margin: 60px;
+// 	padding: 20px;
 
-	border: solid red 5px;
-	background: black;
-	color: orange;
-}
+// 	border: solid red 5px;
+// 	background: black;
+// 	color: orange;
+// }
+
+	
+	h1, h2 {
+		color: orange;
+	}
+
+	.dog-divider {
+		width: 100px;
+		margin: 2px;
+		padding: 2px;
+	}
+
+	body {
+		background-color:black;
+		/*text-align: center;*/
+
+		/*background: linear-gradient(90deg,rgba(0, 75, 150, 0.5),rgba(0, 75, 50, 0.5)),url(/assets/b.jpg);*/
+		
+		background-size: cover;
+		background-position: center;
+		font-family: sans-serif;
+	}
+
+	.wrap {
+		display: grid;
+		grid-template-columns: 1fr;
+
+	}
+
+	.container {
+		/*border: solid green 2px;*/
+		position: relative;
+		top: 100px;
+		/*padding: 30px;*/
+		/*-ms-grid-column: 2/3;*/
+		/*grid-column: 2/3;*/
+
+	}
+
+
+
+	form {
+		margin-top: 50px;
+		transition: all 4s ease-in-out;
+		/*float: center;*/
+		position: relative;
+		left: 30px;
+
+	}
+
+	.form-control {
+		width: 90%;
+		text-align: center;
+		/*background: transparent;*/
+		background-color:white;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid gray;
+		/*color: #fff;*/
+		color: green;
+		font-size: 18px;
+		margin-bottom: 14px;
+	}
+
+	.submit {
+		background-color: green;
+		border-color: transparent;
+		color: black;
+		font-weight: 900;
+		letter-spacing: 2px;
+	}
+
+	.container p {
+		font-size: 16px;
+		color: white;
+	}
+
+
+
+
+	.contact-specials {
+		/*border: solid green 2px;*/
+		/*grid-column:1/2;*/
+		position: relative;
+		top: 20px;
+		/*margin: 2px;*/
+		padding: 2px;
+		color: white;
+		font-size: 16px;
+		
+	}
+
+
+	.static-map {
+		position: relative;
+		text-align: center;
+	
+	}
+
+	.contact-form {
+		position:relative;
+		text-align:center;
+		top:10px;
+		padding: 0 0 20% 0;
+	}
+
+	.submit-button {
+		color:#EAC745;
+		background-color:#521513;
+		border: solid #EAC745 1px;
+		font-size:13px;
+		padding:10px;
+		border-radius:10px;
+	}
+
+
+
+
+

@@ -34,7 +34,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 # Im using to hide username and password and use ENV variables instead
-gem 'dotenv-rails', groups: [:development, :test]
+# gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', :groups => [:development, :test], :github => "bkeepers/dotenv"
 
 
 

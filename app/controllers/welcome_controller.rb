@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
 
+
     def show
       if valid_page?
         render template: "welcome/#{params[:page]}"

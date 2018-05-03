@@ -1,8 +1,9 @@
 class ContactMailer < ApplicationMailer
 
-  def new_comment
+  def new_comment(comment)
+  	@comment = comment
 
-    mail to: "emiliosoto4@gmail.com",
+    mail to: "smfxcmes4@gmail.com",
     	subject: "You have visited the Julius Website"
   end
 end

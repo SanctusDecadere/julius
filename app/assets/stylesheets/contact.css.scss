@@ -9,8 +9,16 @@
 
 	
 	h1, h2 {
-		color: orange;
+		color: blue;
 	}
+	
+
+	hr {
+		border-color:blue;
+		margin:0;
+		padding:0;
+	}
+
 
 	.dog-divider {
 		width: 100px;
@@ -33,17 +41,37 @@
 		display: grid;
 		grid-template-columns: 1fr;
 
+
 	}
 
 	.container {
-		/*border: solid green 2px;*/
 		position: relative;
 		top: 100px;
-		/*padding: 30px;*/
-		/*-ms-grid-column: 2/3;*/
-		/*grid-column: 2/3;*/
-
+		text-align:center;
 	}
+
+	.container p {
+		// font-size: 16px;
+		// color: green;
+	}
+
+	.call-email {
+		color:green;
+		font-size: 16px;
+		padding-top:20px;
+	}
+
+	.contact-header {
+		background-color:green;
+		color:white;
+		font-size:20px;
+		font-weight:900;
+	}
+
+	.geo-map {
+		padding: 0 0 70px 0;
+	}
+
 
 
 
@@ -56,46 +84,30 @@
 
 	}
 
-	.form-control {
-		width: 90%;
-		text-align: center;
-		/*background: transparent;*/
-		background-color:white;
-		border: none;
-		outline: none;
-		border-bottom: 1px solid gray;
-		/*color: #fff;*/
-		color: green;
-		font-size: 18px;
-		margin-bottom: 14px;
-	}
 
-	.submit {
-		background-color: green;
-		border-color: transparent;
-		color: black;
-		font-weight: 900;
-		letter-spacing: 2px;
-	}
-
-	.container p {
-		font-size: 16px;
-		color: white;
-	}
-
-
-
-
-	.contact-specials {
-		/*border: solid green 2px;*/
-		/*grid-column:1/2;*/
+	.hours-of-operation {
 		position: relative;
 		top: 20px;
-		/*margin: 2px;*/
 		padding: 2px;
-		color: white;
+		color: green;
 		font-size: 16px;
 		
+	}
+
+	.contact-specials {
+		color:white;
+		padding:50px 0 110px 0;
+		font-size: 16px;
+		text-align: center;
+		border-radius:2%;
+
+    	text-shadow: 12px 12px 2px red,
+    		16px 16px 2px orange,
+    		19px 19px 2px yellow,
+    		22px 22px 2px green,
+    		25px 25px 2px blue,
+    		28px 28px 2px purple;
+    		
 	}
 
 
@@ -108,8 +120,8 @@
 	.contact-form {
 		position:relative;
 		text-align:center;
-		top:10px;
-		padding: 0 0 20% 0;
+		padding: 0 9% 5% 0;
+
 	}
 
 	.submit-button {

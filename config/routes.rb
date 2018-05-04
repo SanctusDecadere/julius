@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-		root "welcome#index"
+	resources :comments
+
+	# get "comments/new"
+
+	# get "comments/test"
 
 		# resources :welcome 
 
@@ -11,6 +15,7 @@ Rails.application.routes.draw do
 	# get "/welcome/:page" => "welcome#show"
 
 	# get "welcome/gallery"
+	root "welcome#index"
 
 	get "welcome/index"
 
@@ -25,6 +30,9 @@ Rails.application.routes.draw do
 	get "welcome/links"
 
 	get "welcome/calendar"
+
+
+	
 
 
 

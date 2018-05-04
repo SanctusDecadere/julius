@@ -9,11 +9,13 @@
 
 <div class="wrap">
 	<div class="container">
-		<div>
+		<!-- <div>
 			<img class="dog-divider" src="https://lh3.googleusercontent.com/agJNVyc_WO3aAra3qS3XpuHm1T2pmhZDtEFZQ_VW4mvktv_EUFR_VWrQHuidPws6dMtY3zFe_rufSuQK5tw1rlgBfEgFFo8RF7AD8z_uekreAbl5UK_y6Ry2F03WM3Y9suE726bANg" alt="bh-divider">
-		</div><br>
+		</div><br> -->
+			<p class="contact-header">CONTACT</p>
 
 
+		<div class="call-email">
 			<p>
 				Are you interested in learning more about what we have to offer you? We are more than happy to provide additional information about our bar. For more information, or any questions you have, contact us through the form below. <br><br>
 
@@ -22,38 +24,35 @@
 				Phone:
 				(877) 746-0528 <br><br>
 
-				Email:
-				info@juliusbarny.com <br><br>
+				
+				Email: <a href="mailto:info@juliusbarny.com", style="color:turquoise">info@juliusbarny.com</a><br><br>
+
  
  
 				We look forward to hearing from you. Contact us by phone, email, or the form below today!
 			</p>
+		</div>
 
 
+			<div class="contact-form">
+				<%= form_for @comment do |f| -%><br>
+				<%= f.text_field :name, :required => true, :placeholder => "Name", size: '80'  %><br><br>
+				<%= f.text_field :email, :required => true, :placeholder => "Email", size: '80'  %><br><br>
+				<%= f.text_field :message, :required => true, :placeholder => "Message", size: '80' %><br><br>
+				<%= f.submit "Send it our way!", :class => 'submit-button' %>
+				<% end -%>
+			</div>
 
 
+	<hr>
 		<div>
 			<img class="dog-divider" src="https://lh3.googleusercontent.com/agJNVyc_WO3aAra3qS3XpuHm1T2pmhZDtEFZQ_VW4mvktv_EUFR_VWrQHuidPws6dMtY3zFe_rufSuQK5tw1rlgBfEgFFo8RF7AD8z_uekreAbl5UK_y6Ry2F03WM3Y9suE726bANg" alt="bh-divider">
 		</div>
+	<hr>
 	
 
 
-			<div class="contact-specials">
-				<p>
-					Monday-Saturday <br>
-					Happy Hour Specials 4pm to 9pm!!
-				</p><br>
-
-				<p>
-					Sunday Beer Blast!! <br>
-					All Bottled and Tap Beers $2.00 Off Regular Price!!
-				</p><br>
-
-				<p>
-					All Day Everyday!! <br>
-
-					$6.00 Long Island Ice tea!! All Day! Everyday Drink Special!!
-				</p><br>
+			<div class="hours-of-operation">
 
 				<p>Hours of Operation
 					Monday–Saturday,
@@ -64,28 +63,32 @@
 					Located on 10th Street and Waverly. At Penn Station,
 					Take the #1 Train to Christopher Street, the #2 or #3 Train to 14th Street
 					or the A, C, E, B, D, or F Train to West 4th Street!
-				</p><br><br><br><br><br>
+				</p><br><br>
 
 			</div> 
 
 
-		<div>
-			<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJURY2PJRZwokR7izijNRaHa8&key=AIzaSyAAS-pA-TcqTK88K4vqnGh8oYqZuhr5I8E" allowfullscreen></iframe>
-		</div><br><br><br><br><br><br>
+		<div class="geo-map">
+			<iframe width="500" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJURY2PJRZwokR7izijNRaHa8&key=AIzaSyAAS-pA-TcqTK88K4vqnGh8oYqZuhr5I8E" allowfullscreen></iframe><br><br><br><hr>
+		</div>
 
 	</div>
 </div>
+
+			
+
+		<div class="contact-specials">
+	
+			<p>Monday-Saturday<br>Happy Hour Specials 4pm to 9pm!!</p><br>
+
+			<p>Sunday Beer Blast!!<br>All Bottled and Tap Beers $2.00 Off Regular Price!!</p><br>
+
+			<p>All Day Everyday!! <br>$6.00 Long Island Ice tea!! All Day! Everyday Drink Special!!</p>
+		</div>
 	
 </body>
 
 </html>
 
 
-<div class="contact-form">
-	<%= form_for @comment do |f| -%><br>
-		<%= f.text_field :name, :required => true, :placeholder => "Name" %><br><br>
-		<%= f.text_field :email, :required => true, :placeholder => "Email" %><br><br>
-		<%= f.text_field :message, :required => true, :placeholder => "Message" %><br><br>
-		<%= f.submit "Send it my way!", :class => 'submit-button' %>
-	<% end -%>
-</div>
+

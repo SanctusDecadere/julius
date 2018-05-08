@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'dotenv-rails', groups: [:development, :test]
 gem 'dotenv-rails', :groups => [:development, :test], :github => "bkeepers/dotenv"
 
-
+gem 'sendgrid-ruby'
 
 
 # Use Redis adapter to run Action Cable in production

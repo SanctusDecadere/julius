@@ -1,4 +1,5 @@
-
+require 'sendgrid-ruby'
+include SendGrid
 
 class CommentsController < ApplicationController
 

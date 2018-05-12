@@ -88,24 +88,22 @@ Rails.application.configure do
 
 
 
+  # config.action_mailer.delivery_method = :smtp
+
+
+
+ # Setup the mailer config
   config.action_mailer.delivery_method = :smtp
-
-
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
-    address: 'smtp.sendgrid.net',
-    port: 587,
-    domain: 'juliusbar.herokuapp.com',
-    authentication: 'plain',
-    enable_starttls_auto: true,
-    user_name: ENV['juliusSender'],
-    password: ENV['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
-']
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :domain => 'yourdomain.com',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
-
-  config.action_mailer.default_url_options = { host: 'http://juliusbar.herokuapp.com/' }
-
-
-
 
 
 

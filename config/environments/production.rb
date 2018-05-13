@@ -1,4 +1,7 @@
 Rails.application.configure do
+
+
+  require 'mail'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -93,17 +96,37 @@ Rails.application.configure do
 
 
  # Setup the mailer config
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.perform_deliveries = true
+  # config.action_mailer.smtp_settings = {
+  #   :user_name => 'juliusbar',
+  #   # :password => ENV['SENDGRID_PASSWORD'],
+  #   :password => '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'
+  #   # :domain => 'gmail.com',
+  #   :address => 'smtp.sendgrid.net',
+  #   :port => 587,
+  #   :authentication => :plain,
+  #   :enable_starttls_auto => true
+  # }
+
+
+
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
+
+
   config.action_mailer.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'yourdomain.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
+    address: 'smtp.sendgrid.net',
+    port: 587,
+    domain: 'juliusbar.herokuapp.com',
+    authentication: 'plain',
+    enable_starttls_auto: true,
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD']
   }
+
+  config.action_mailer.default_url_options = { host: 'juliusbar.herokuapp.com/' }
+
+
 
 
 

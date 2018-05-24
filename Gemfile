@@ -39,6 +39,8 @@ gem 'dotenv-rails', :groups => [:development, :test], :github => "bkeepers/doten
 
 gem 'sendgrid-ruby'
 
+gem 'figaro'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

@@ -31,6 +31,8 @@ Rails.application.routes.draw do
 
 	get "welcome/calendar"
 
+	get "welcome/calendar2"
+
 
 	
 

@@ -3,10 +3,10 @@
 	<meta charset="UTF-8">
 	<title>Calendar 2</title>
 	<link rel="stylesheet" href="/assets/calendar2.css.scss">
+	<link rel="stylesheet" href="/assets/tingle.css.scss">
+	<script src="/assets/tingle.js"></script>
 </head>
 <body>
-
-
 
 			
 				
@@ -19,6 +19,33 @@
 			
 
 			<div class="basset-hound"><!-- <p>Julius Calendar MARCH 2018</p> --><br><img src="https://lh3.googleusercontent.com/agJNVyc_WO3aAra3qS3XpuHm1T2pmhZDtEFZQ_VW4mvktv_EUFR_VWrQHuidPws6dMtY3zFe_rufSuQK5tw1rlgBfEgFFo8RF7AD8z_uekreAbl5UK_y6Ry2F03WM3Y9suE726bANg" alt="bh-divider"></div>
+
+
+
+		    <!-- <button class="btn btn--primary btn-demo js-tingle-cal">Mattachine Party!</button> -->
+  <!--           <button class="btn btn--secondary btn-demo js-tingle-modal-2">Need buttons?</button>
+            <button class="btn btn--secondary btn-demo js-tingle-modal-3">Big content? No problem!</button>
+            <button class="btn btn--secondary btn-demo js-tingle-modal-4">Stick to me!</button>
+            <button class="btn btn--secondary btn-demo js-tingle-modal-5">Close with footer button only</button>
+            <button class="btn btn--secondary btn-demo js-tingle-modal-6">?</button> -->
+
+
+
+<!-- Summer Beach Party Information with flyer image -->
+            <div class="tingle-cal">
+            	<h1>Beach Party Kick Off!!</h1>
+            	<p>May 31st! Julius' Summer Kick Off Beach Party!!</p>
+            	<img src="/assets/summerbeachparty.png" alt="Summer Beach Party">
+            </div>
+
+
+<!-- Mattachine May 23rd Information with flyer image -->
+    		<div class="tingle-cal-mattachine">
+            	<h1>Mattachine Party!!!</h1>
+            	<p>Join us for our famous Mattachine Party on Monday May 23rd!! Party starts at 10pm!!</p>
+            	<img src="/assets/mattachineevent.jpg" alt="Mattachine Party!">
+            </div>
+
 
 
 
@@ -80,18 +107,37 @@
 
 			<div class="box18"><p>18</p></div>
 
-			<div class="box19"><p>19</p></div>
+
+
+			<div class="box19">
+				<p>
+					<a class="btn btn--primary btn-demo js-tingle-cal19">19</a>
+				</p>
+			</div>
+
+
 
 			<div class="box20"><p>20</p></div>
 
 			<div class="box21"><p>21</p></div>
 
-
-
-
 			<div class="box22"><p>22</p></div>
 
-			<div class="box23"><p>23</p></div>
+
+
+
+
+
+		<div class="box23">
+				<p>
+					<a class="btn btn--primary btn-demo js-tingle-cal23">23</a>
+				</p>
+			</div>
+
+
+
+
+
 
 			<div class="box24"><p>24</p></div>
 
@@ -114,13 +160,66 @@
 		<!-- </div> -->
 
 	</div>
-
-
-
-
-
-
-
-
 </body>
 </html>
+
+<script>
+	// Julius Summer Beach event on the May 31st
+
+    var modalTinyNoFooter = new tingle.modal({
+        onClose: function() {
+            console.log('close');
+        },
+        onOpen: function() {
+            console.log('open');
+        },
+        beforeOpen: function() {
+            console.log('before open');
+        },
+        beforeClose: function() {
+            console.log('before close');
+            return true;
+        },
+        cssClass: ['class1', 'class2']
+    });
+    var btn = document.querySelector('.js-tingle-cal19');
+    btn.addEventListener('click', function(){
+        modalTinyNoFooter.open();
+    });
+    modalTinyNoFooter.setContent(document.querySelector('.tingle-cal').innerHTML);
+
+
+
+
+// Julius Mattachine Event on May 23rd
+
+   var modalTinyNoFooter1 = new tingle.modal({
+        onClose: function() {
+            console.log('close');
+        },
+        onOpen: function() {
+            console.log('open');
+        },
+        beforeOpen: function() {
+            console.log('before open');
+        },
+        beforeClose: function() {
+            console.log('before close');
+            return true;
+        },
+        cssClass: ['class1', 'class2']
+    });
+    var btn = document.querySelector('.js-tingle-cal23');
+    btn.addEventListener('click', function(){
+        modalTinyNoFooter1.open();
+    });
+    modalTinyNoFooter1.setContent(document.querySelector('.tingle-cal-mattachine').innerHTML);
+
+
+
+</script>
+
+<!-- 
+<img class="mattachine-modal" src="" alt=""> -->
+
+

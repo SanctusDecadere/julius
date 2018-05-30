@@ -1,38 +1,11 @@
 
 
-
-
-// .test {
-
-// 	grid-row
-
-// 	// width:300px;
-// 	// height:30px;
-// 	// font-family: sans-serif;
-// 	background-color:green;
-// 	// text-align:center;
-// 	color:pink;
-// 	// font-size:20px;
-
-// }
-
-
 body {
-	// display:flex;
-	// flex-direction:column;
-	// justify-content:center;
-	// scale:1;
-	// position:relative;
-	// top:40%;
-	// background-image: url('https://lh3.googleusercontent.com/agJNVyc_WO3aAra3qS3XpuHm1T2pmhZDtEFZQ_VW4mvktv_EUFR_VWrQHuidPws6dMtY3zFe_rufSuQK5tw1rlgBfEgFFo8RF7AD8z_uekreAbl5UK_y6Ry2F03WM3Y9suE726bANg');
-	// background-repeat: no-repeat;
-	// background-position: center;
-	// background-size:550px 300px;
-	// background-attachment:scroll;
 	font-family: sans-serif;
 	background-color:black;
-	color:orange;
+	color:black;
 	font-size:14px;
+	margin-bottom:100px;
 }
 
 
@@ -50,19 +23,8 @@ body {
 			background-color:green;
 			color:white;
 			font-weight:900;
+
 		}
-
-
-
-
-
-		// position:relative;
-		// top:100px;
-		// background-color:green;
-		// color:white;
-		// font-size:20px;
-		// font-weight:900;
-		// text-align:center;
 
 	}
 
@@ -72,6 +34,8 @@ body {
 			position:relative;
 			top:110px;
 			text-align:center;
+			// padding:0px;
+			// margin:0px;
 
 		img {
 			width:130px;
@@ -79,18 +43,19 @@ body {
 			border-radius:1px;
 		}
 
-		p {
-			color:green;
-		}
-		
 	}
 
 
 .calendar-wrap {
-	
+	color:orange;
+	position:relative;
+	top:-110px;
 	display:grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-	padding:10%;
+	// padding:1%;
+	// padding:1% 10% 1% 10%;
+	padding: 1% 10% 0px 10%;
+	margin-bottom:-110px;
 	// max-width:1000px;
 	text-align:center;
 	font-size:15px;
@@ -103,8 +68,6 @@ body {
 		padding:25px;
 		font-size:15px;
 		border:solid green 2px;
-		// text-align:center;
-		// z-index:1;
 	}
 
 
@@ -239,6 +202,17 @@ body {
 	.box19 {
 		grid-row:5;
 
+		p {
+			padding:23px;
+		}
+
+		a {
+			color:white;
+			font-weight:900;
+			font-size:16px;
+			padding:0;
+		}
+		
 	}
 
 	.box20 {
@@ -257,6 +231,17 @@ body {
 
 	.box23 {
 		grid-row:6;
+
+				p {
+			padding:23px;
+		}
+
+		a {
+			color:white;
+			font-weight:900;
+			font-size:16px;
+			padding:0;
+		}
 	}
 
 	.box24 {
@@ -301,14 +286,29 @@ body {
 
 }
 
-	// .calendar-container {
-	// 	padding:10%;
-	// max-width:1000px;
-	// text-align:center;
-	// font-size:15px;
-	// }
+
+.tingle-cal {
+	visibility:hidden;
+
+	img {
+		width:1px;
+		
+	}
+
+}
+
+
+.tingle-cal-mattachine {
+		visibility:hidden;
 
 
 
+	img {
+		width:1px;
+		border:solid red 2px;
+		
+	}
 
+
+}
 

@@ -141,12 +141,25 @@
 
 
 
+// .submit-button {
+// 	font-size:20px;
+// }
 
+// .contact-specials {
+// 	font-size:20px;
+// }
 
+// .hours-of-operation {
+// 	font-size:20px;
+// }
 
+// .contact-header {
+// 	font-size:20px;
+// }
 
-
-
+// .call-email {
+// 	font-size:20px;
+// }
 
 
 // Smaller Screens
@@ -160,7 +173,6 @@
 		display:grid;
 		grid-template-columns:1fr;
 
-
 		}
 
 		.container {
@@ -170,8 +182,28 @@
 		grid-column:1;
 		padding:0px 0px 0px 0px;
 		}
+		
 
 
+		.submit-button {
+			font-size:20px;
+		}
+
+		.contact-specials {
+			font-size:20px;
+		}
+
+		.hours-of-operation {
+			font-size:20px;
+		}
+
+		.contact-header {
+			font-size:20px;
+		}
+
+		.call-email {
+			font-size:20px;
+		}
 
 }
 

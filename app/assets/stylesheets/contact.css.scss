@@ -170,10 +170,10 @@
 
 
 // Smaller Screens
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 
 	body {
-		background-color:pink;
+		background-color:black;
 	}
 
 		.wrap {
@@ -198,22 +198,22 @@
 		}
 
 		.contact-specials {
-			font-size:30px;
+			font-size:25px;
 			font-weight:900;
 		}
 
 		.hours-of-operation {
-			font-size:30px;
+			font-size:25px;
 			font-weight:900;
 		}
 
 		.contact-header {
-			font-size:30px;
+			font-size:25px;
 			font-weight:900;
 		}
 
 		.call-email {
-			font-size:30px;
+			font-size:25px;
 			font-weight:900;
 		}
 

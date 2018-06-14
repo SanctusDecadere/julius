@@ -48,6 +48,8 @@
 		position: relative;
 		top: 100px;
 		text-align:center;
+
+		padding:0px 50px 0px 50px;
 	}
 
 	.container p {
@@ -135,5 +137,35 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// Smaller Screens
+@media only screen and (max-width: 600px) {
+
+	body {
+		background-color:black;
+	}
+
+		.container {
+		position: relative;
+		top: 100px;
+		text-align:center;
+
+		padding:0px 100px 0px 100px;
+	}
+
+
+
+}
 
 

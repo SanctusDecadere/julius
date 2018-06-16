@@ -170,7 +170,7 @@
 
 
 // Smaller Screens
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
 
 	body {
 		background-color:black;
@@ -179,6 +179,8 @@
 		.wrap {
 		display:grid;
 		grid-template-columns:1fr;
+		padding:0;
+		margin:0;
 
 		}
 
@@ -188,32 +190,33 @@
 		// text-align:center;
 		grid-column:1;
 		padding:0px 0px 0px 0px;
+		margin:0
 		}
 		
 
 
 		.submit-button {
-			font-size:30px;
+			font-size:20px;
 			font-weight:900;
 		}
 
 		.contact-specials {
-			font-size:25px;
+			font-size:20px;
 			font-weight:900;
 		}
 
 		.hours-of-operation {
-			font-size:25px;
+			font-size:20px;
 			font-weight:900;
 		}
 
 		.contact-header {
-			font-size:25px;
+			font-size:20px;
 			font-weight:900;
 		}
 
 		.call-email {
-			font-size:25px;
+			font-size:20px;
 			font-weight:900;
 		}
 

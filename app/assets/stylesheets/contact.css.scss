@@ -27,6 +27,7 @@
 	}
 
 	body {
+
 		background-color:black;
 		/*text-align: center;*/
 
@@ -42,6 +43,7 @@
 		grid-template-columns:1fr;
 
 
+
 	}
 
 	.container {
@@ -52,7 +54,7 @@
 		display:flex-center;
 
 
-		padding:0px 0px 0px 0px;
+		padding:px 0px 0px 0px;
 	}
 
 	.container p {
@@ -73,8 +75,21 @@
 		font-weight:900;
 	}
 
-	.geo-map {
+
+
+
+
+
+
+
+
+	.geo-map iframe {
 		padding: 0 0 70px 0;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+
 	}
 
 
@@ -123,8 +138,8 @@
 	}
 
 	.contact-form {
-		position:relative;
-		text-align:center;
+		// position:relative;
+		// text-align:center;
 		padding: 0 9% 5% 0;
 
 	}
@@ -173,12 +188,12 @@
 @media only screen and (max-width: 650px) {
 
 	body {
-		background-color:lightblue;
+		background-color:black;
 	}
 
 		.wrap {
 		display:grid;
-		grid-template-columns:1fr;
+		grid-template-columns:1fr 1fr 1fr;
 		padding:0;
 		margin:0;
 
@@ -188,7 +203,7 @@
 		// position: relative;
 		// top: 100px;
 		// text-align:center;
-		grid-column:1;
+		grid-column:2/3;
 		padding:0px 0px 0px 0px;
 		margin:0
 		}
@@ -196,7 +211,7 @@
 
 
 		.submit-button {
-			font-size:50px;
+			font-size:13px;
 			font-weight:900;
 		}
 
@@ -219,6 +234,16 @@
 			font-size:20px;
 			font-weight:900;
 		}
+
+
+		.contact-form {
+		// position:relative;
+		// text-align:center;
+		padding: 0 0% 0% 0;
+		// padding-right:50px;
+		padding: 0 60px 12px 0;
+
+	}
 
 }
 

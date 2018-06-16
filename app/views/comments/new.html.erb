@@ -35,12 +35,12 @@
 			</p>
 		</div>
 
-
+<!-- Contact Form -->
 			<div class="contact-form">
 				<%= form_for @comment do |f| -%><br>
-				<%= f.text_field :name, :required => true, :placeholder => "Name", size: '80'  %><br><br>
-				<%= f.text_field :email, :required => true, :placeholder => "Email", size: '80'  %><br><br>
-				<%= f.text_field :message, :required => true, :placeholder => "Message", size: '80' %><br><br>
+				<%= f.text_field :name, :required => true, :placeholder => "Name", size: '40'  %><br><br>
+				<%= f.text_field :email, :required => true, :placeholder => "Email", size: '40'  %><br><br>
+				<%= f.text_field :message, :required => true, :placeholder => "Message", size: '40' %><br><br>
 				<%= f.submit "Send it our way!", :class => 'submit-button' %>
 				<% end -%>
 			</div>
@@ -69,11 +69,11 @@
 
 			</div> 
 
-
+<!-- Good Map On Page! -->
 		<div class="geo-map">
-			<iframe width="500" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJURY2PJRZwokR7izijNRaHa8&key=AIzaSyAAS-pA-TcqTK88K4vqnGh8oYqZuhr5I8E" allowfullscreen></iframe><br><br><br>
-			<!-- <hr> -->
+			<iframe width="500" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJURY2PJRZwokR7izijNRaHa8&key=AIzaSyAAS-pA-TcqTK88K4vqnGh8oYqZuhr5I8E" allowfullscreen></iframe><br><br><br>
 		</div>
+
 <!-- Previous end of wrap and container. See below.  -->
 <!-- 	</div>
 </div> -->

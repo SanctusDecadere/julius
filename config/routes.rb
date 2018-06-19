@@ -33,6 +33,8 @@ Rails.application.routes.draw do
 
 	get "welcome/calendar2"
 
+	get "welcome/gallery3"
+
 
 	
 

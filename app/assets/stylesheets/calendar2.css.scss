@@ -52,15 +52,10 @@ body {
 	top:-110px;
 	display:grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-	// padding:1%;
-	// padding:1% 10% 1% 10%;
 	padding: 1% 10% 0px 10%;
 	margin-bottom:-110px;
-	// max-width:1000px;
 	text-align:center;
 	font-size:15px;
-
-
 
 	p {
 		opacity:.7;
@@ -308,6 +303,15 @@ body {
 		border:solid red 2px;
 		
 	}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 680px) {
+	
 
 
 }

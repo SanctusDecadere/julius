@@ -1,20 +1,142 @@
-	// .indexWrapper {
-	// 	display:grid;
-	// 	grid-template-columns:1fr 1fr;
-	// 	/*grid-template-columns:1fr 2fr 1fr;*/
-	// 	grid-template-rows:minmax(100px, auto);
-	// 	grid-gap:1em;
-	// 	justify-items:stretch;
-	// 	align-items:stretch;
-	// }
 
 
-	// .mattachine {
-	// 	grid-row:2/3;
+body {
+	background-color:black;
+}
 
-	// }
 
-	// .owlparty {
-	// 	grid-row:2/3;
 
-	// }
+.gay-pride {
+	position:relative;
+	top:90px;
+	text-align:center;
+	font-size:16px;
+	font-weight:900;
+	color:pink;
+	background-color:green;
+	padding:2px;
+	border:black solid 2px;
+}
+
+
+		.indexWrapper {
+			background-image:url("https://lh3.googleusercontent.com/mPyeGyo6zqVxCIK6Y4Ms8JdPhKK8Wky6GEw_WdN8AP44SuOnny9pfaozucuv6snNAwXrzVwh28k63l5YjHw2R-ymnIm6ZGzi8ukLxZAjtAw0qJwtc08I2jFqxvTzT1FJ_Fl8ipDooQ=w2400");
+			// background-repeat:repeat-y;
+			// background-size:cover;
+			// background-size:100% 100%;
+
+			padding:50px;
+
+			display:grid;
+			grid-template-columns:1fr;
+			/*grid-template-columns:1fr 2fr 1fr;*/
+			grid-template-rows:minmax(100px, auto);
+			grid-gap:0em;
+			justify-items:stretch;
+			align-items:stretch;
+			background-color:black;
+			color: red;
+	}
+
+	.indexWrapper > div > img {
+		position: relative;
+		border-radius: 2%;
+		/*background-color:red;*/
+		margin: 10px;
+		/*padding:20px;*/
+		/*min-width:100%;*/
+		/*max-width:100%;*/
+		height: 70%;
+		width: 70%;
+	}
+
+	.indexWrapper > div {
+		text-align: center;
+	}
+
+
+
+	.mattachine {
+		padding-top:45px;
+		grid-row:1;
+	}
+
+	.mattachine > p {
+		padding:2px;
+		border:solid green 1px;
+		/*border-radius: 2%;*/
+		/*font-family: 'Marck Script';*/
+		color:white;
+		position:relative;
+		text-align:center;
+		font-size: 22px;
+	}
+
+	.owlparty {
+		grid-row:3;
+	}
+
+	.owlparty > p {
+		padding: 2px;
+		border:solid green 1px;
+		/*border-radius: 50%;*/
+		/*font-family: 'Marck Script';*/
+		color:white;
+		position:relative;
+		text-align:center;
+		font-size: 22px;
+	}
+
+
+
+
+	.specials {
+		font-size: 16px;
+		color:white;
+		text-align: center;
+		padding: 20px;
+		border: solid green 2px;
+		border-radius:2%;
+		grid-row:5;
+		background-color:black;
+
+
+    	text-shadow: 12px 12px 2px red,
+    		16px 16px 2px orange,
+    		19px 19px 2px yellow,
+    		22px 22px 2px green,
+    		25px 25px 2px blue,
+    		28px 28px 2px purple;
+    		
+	}
+
+
+
+.hours-of-operation {
+	top: 32px;
+	position: relative;
+	text-align:center;
+	color: white;
+	font-size:16px;
+	padding: 5px;
+	
+	grid-row:6;
+}
+
+.hours-of-operation > p {
+	font-size: 16px;
+	margin: 10px;
+	background-color: green;
+	color: white;
+}
+
+
+
+	.bh-dividers {
+		/*align-self:center;*/
+		grid-row:4;
+		justify-self:center;
+
+		width:100px;
+		/*height: 100px;*/
+	}

@@ -23,6 +23,10 @@ body {
 	z-index:0;
 }
 
+// .top-nav-align a {
+//   text-align:center;
+// }
+
 
 #links-link {
 	color: #4B0082;
@@ -97,7 +101,26 @@ a:link {
 	
 	z-index:1;
 	width:100%;
+  // text-align:center;
 }
+
+// .nav-item img {
+//   border:solid green 1px;
+//   position:relative;
+//   left:0px;
+//   width:40px;
+//   height:40px;
+//   padding:5px;
+//   margin:0;
+// }
+
+// .home-button {
+//   border:solid red 5px;
+// }
+
+// .nav-item a:nth-child(8) {
+//   text-align:left;
+// }
 
 
 .nav-item > a {

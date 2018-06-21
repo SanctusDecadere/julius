@@ -1,0 +1,99 @@
+
+
+	body {
+		background-image:url("https://lh3.googleusercontent.com/Fa22FKzj0SbXoc6yV7e0mADCVpNeKcmEYxZ4A_ja8nGEjAkJ8WhQjr5eVUfKOm5D-h2xeGOg6thIvIqLYQye9xF5SyaM7FUwhDb4sFBTtTAwV7xFxzRNe3EShLKJ0JuJbO0YpDgJ7g=w2400");
+		background-repeat:repeat-y;
+		background-size:cover;
+		background-position:center;
+		height:880px;
+	}
+
+	.wrap {
+	}
+
+	.container {
+		display:grid;
+		grid-template-rows:repeat(7, 1fr);
+
+	}
+
+	.menu-header  {
+		background-color:green;
+		height:32px;
+		text-align:center;
+		font-size:20px;
+		color:white;
+		font-weight:900;
+		margin-bottom:5px;
+		border:solid black 1px;
+	}
+
+	.food {
+		grid-row:2/4;
+		text-align: center;
+	}
+
+	.food img {
+		width:100px;
+		height:100px;
+		border:solid black 2px;
+		box-shadow:0 0 50px black;
+	}
+
+	.food img:hover {
+		border:solid green 1px;
+	}
+
+	figure {
+  		float:left;
+		color:white;
+		font-size:14px;
+		font-weight:900;
+		text-shadow:0px 0px 10px black;
+	}
+
+
+
+
+	.drinks-header  {
+		/*grid-row:6;*/
+		background-color:green;
+		height:32px;
+		text-align:center;
+		font-size:20px;
+		color:white;
+		font-weight:900;
+		margin-bottom:5px;
+		border:solid black 1px;
+	}
+
+	.drinks {
+		grid-row:5/7;
+		text-align: center;
+
+	}
+
+	.drinks img {
+		width:100px;
+		height:100px;
+		border:solid black 2px;
+		box-shadow:0 0 50px black;
+	}
+
+	.drinks img:hover {
+		border:solid green 1px;
+	}
+
+
+
+
+@media only screen and (max-width: 440px) {
+	
+		.container {
+			position:relative;
+			top:-100px;
+
+		}
+	
+
+}

@@ -50,7 +50,8 @@
 	.main-img img {
 		// height:420px;
 		// width:auto;
-		width:375px;
+		// Moved with down from 375px to avoid right side of image going over.
+		width:325px;
 		// display: block;
     	// margin-left: auto;
     	// margin-right: auto;

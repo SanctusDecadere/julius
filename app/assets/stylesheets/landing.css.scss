@@ -6,6 +6,56 @@ body {
 
 
 
+// Social Media Icons. facebook, instagram, twitter.
+.social-media {
+	// color:white;
+	// display:flex;
+	position:absolute;
+	top:20%;
+	left:-2%;
+	transform: translate(0%, 70%);
+	z-index:1;
+
+	li {
+		list-style:none;
+	}
+
+	a {
+
+		width:35px;
+		height:35px;
+		background:green;
+		text-align:center;
+		line-height:32px;
+		font-size:25px;
+		margin: 0 10px;
+		display:block;
+		border-radius:50%;
+		position:relative;
+		overflow:hidden;
+		border:solid 1px black;
+	}
+
+	.fa {
+		position:relative;
+		// color:#262626;
+		color:white;
+		transition:1s;
+	}
+
+	a:hover .fa {
+		transform: rotateY(180deg);
+	}
+}
+
+
+
+
+
+
+
+
+
 .gay-pride {
 	position:relative;
 	top:90px;
@@ -64,8 +114,6 @@ body {
 	.mattachine > p {
 		padding:2px;
 		border:solid green 1px;
-		/*border-radius: 2%;*/
-		/*font-family: 'Marck Script';*/
 		color:white;
 		position:relative;
 		text-align:center;
@@ -79,8 +127,6 @@ body {
 	.owlparty > p {
 		padding: 2px;
 		border:solid green 1px;
-		/*border-radius: 50%;*/
-		/*font-family: 'Marck Script';*/
 		color:white;
 		position:relative;
 		text-align:center;
@@ -111,7 +157,6 @@ body {
 	}
 
 
-
 .hours-of-operation {
 	top: 32px;
 	position: relative;
@@ -128,6 +173,7 @@ body {
 	margin: 10px;
 	background-color: green;
 	color: white;
+	border:solid gray 1px;
 }
 
 

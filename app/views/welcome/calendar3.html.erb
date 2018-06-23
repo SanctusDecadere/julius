@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Calendar 3</title>
+	<h1>Calendar Three</h1>
+</head>
+<body>
+
+	<img class="image-header" src="https://lh3.googleusercontent.com/agJNVyc_WO3aAra3qS3XpuHm1T2pmhZDtEFZQ_VW4mvktv_EUFR_VWrQHuidPws6dMtY3zFe_rufSuQK5tw1rlgBfEgFFo8RF7AD8z_uekreAbl5UK_y6Ry2F03WM3Y9suE726bANg" alt="bh-divider" alt="">
+
+
+	<div class="wrap">
+
+		<div class="container">
+
+			<div class="header">JUNE 2018 CALENDAR</div>
+
+			<div class="date">DATE</div>
+			<div class="event">EVENT</div>
+			<div class="time">TIME</div>
+
+
+<!-- First Event -->
+			<div class="event-1-date">Sunday, June 24th</div>
+			<div class="event-1-event">NYC Gay Pride</div>
+			<div class="event-1-time">All Day</div>
+
+<!-- Second Event -->
+			<div class="event-2-date">Thursday, June 28th</div>
+			<div class="event-2-event">Mattachine Party</div>
+			<div class="event-2-time">10pm - 4am</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+<style>
+
+	body {
+		background-color:black;
+		/*color:blue;*/
+		font-family: sans-serif;
+	}
+
+/*	.header {
+		border:solid red 3px;
+		background-color:green;
+		color:white;
+		font-size:16px;
+	}*/
+
+	.image-header {
+		position:relative;
+		top:50px;
+		left:42%;
+		width:15%;
+		height:auto;
+	}
+
+
+
+	.wrap {
+
+	}
+
+
+	.container {
+		display:grid;
+		grid-template-rows:repeat(5, 1fr);
+		grid-template-columns:repeat(3, 1fr);
+		border:solid green 1px;
+
+		box-shadow: 0 0 5px blue;
+		box-shadow: 0 0 8px orange;
+		/*box-shadow: 0 0 12px red;*/
+
+	}
+
+	.header {
+		background-color:green;
+		font-color:white;
+		grid-row:2;
+		grid-column:1/4;
+		margin-top:20px;
+		padding:3px;
+		text-align:center;
+		font-size:16px;
+		font-weight:900;
+		border:solid gray 1px;
+		text-shadow: 0 0 5px gray;
+	}
+
+	.date {
+		grid-row:3;
+		grid-column:1/2;
+		text-align:center;
+		color:green;
+		font-size:16px;
+		margin-top:10px;
+		font-weight:bold;
+
+	}
+
+	.event {
+		grid-row:3;
+		grid-column:2/3;
+		text-align:center;
+		color:green;
+		font-size:16px;
+		margin-top:10px;
+		font-weight:bold;
+	}
+
+	.time {
+		grid-row:3;
+		grid-column:3/4;
+		text-align:center;
+		color:green;
+		font-size:16px;
+		margin-top:10px;
+		font-weight:bold;
+
+	}
+
+
+
+/*	.date-event-time {
+		grid-row:3;
+		grid-column:1/4;
+		margin-top:20px;
+		background-color:black;
+		color:white;
+		font-size:16px;
+		word-spacing:200px;
+		text-align:center;
+	}*/
+
+/* First Event */
+	.event-1-date {
+		grid-row:4;
+		grid-column:1/2;
+		text-align:center;
+		color:white;
+		font-size:16px;
+	}
+
+	.event-1-event {
+		grid-row:4;
+		grid-column:2/3;
+		text-align:center;
+		color:white;
+		font-size:16px;
+
+	}
+
+	.event-1-time {
+		grid-row:4;
+		grid-column:3/4;
+		text-align:center;
+		color:white;
+		font-size:16px;
+	}
+
+	/* Second Event */
+	.event-2-date {
+		grid-row:5;
+		grid-column:1/2;
+		text-align:center;
+		color:white;
+		font-size:16px;
+	}
+
+	.event-2-event {
+		grid-row:5;
+		grid-column:2/3;
+		text-align:center;
+		color:white;
+		font-size:16px;
+
+	}
+
+	.event-2-time {
+		grid-row:5;
+		grid-column:3/4;
+		text-align:center;
+		color:white;
+		font-size:16px;
+	}
+
+
+
+
+
+
+</style>
+
+
+

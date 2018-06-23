@@ -1,0 +1,75 @@
+
+
+
+
+	html {
+		background-color:black;
+	}
+
+	
+	.about-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		background-color: black;
+		grid-gap: 0.5em;
+
+	}
+
+	.about-container {
+		color: white;
+		font-size: 16px;
+		padding:20px;
+		position: relative;
+		top: 60px;
+		border: solid green 2px;
+		margin: 3px;
+		// z-index: 1;
+	}
+
+
+	.about-titles {
+		position: relative;
+		font-size: 20px;
+		color: green;
+		
+		text-align:left;
+		margin-bottom:15px;
+	}
+
+	.video-responsive{
+	    overflow:hidden;
+	    padding-bottom:60.25%;
+	    position:relative;
+	    height:0;
+	    margin-top:20px;
+	}
+	.video-responsive iframe{
+	    left:0;
+	    top:0;
+	    height:100%;
+	    width:100%;
+	    position:absolute;
+	}
+
+
+	.charity-image-wrapper {
+		border: solid green 1px;
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-bottom:70px;
+		text-align: center;
+	}
+
+	.charity-pics img {
+		display:inline-block;
+		border: solid green 2px;
+		max-width: 30%;
+	    height: auto;
+	    margin:3px 5px 10px 5px;
+	}
+
+	 .charity-paragraph {
+	 	margin:20px;
+	 }
+	
+

@@ -85,9 +85,46 @@
 		border:solid green 1px;
 	}
 
+// // Galaxy S7
+// 	@media only screen and (min-device-width: 414px) and (max-device-width: 732px) {
+		
+// 		.wrap {
+// 			background-color:orange;
+// 		}
+
+
+// 		.container {
+
+// 			position:relative;
+// 			top:0px;
+// 		}
+
+// 	}
+
+	// Galaxy S8
+
+	@media only screen and (max-width: 740px) {
+
+	.wrap {
+
+		// background-color:red;
+	}
+
+		.container {
+
+			position:relative;
+			top:300px;
+
+
+		}
+		
+
+	}
+
 
 
 /*Galaxy S7 and S8 */
+<<<<<<< HEAD
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
 
 	.wrap {
@@ -98,11 +135,23 @@
 			.container {
 				position:relative;
 				top:-70px;
+=======
+// @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
 
-			}
+// 	.wrap {
+// 		background-color:gray;
+// 	}
+>>>>>>> menu2
 
 
-}
+// 			.container {
+// 				position:relative;
+// 				top:-70px;
+
+// 			}
+
+
+// }
 
 
 

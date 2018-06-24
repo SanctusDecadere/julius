@@ -86,14 +86,28 @@
 
 
 
+/*Galaxy S7 and S8 */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
 
-@media only screen and (max-width: 440px) {
-	
-		.container {
-			position:relative;
-			top:-100px;
+			.container {
+				position:relative;
+				top:-100px;
 
-		}
-	
+			}
+
 
 }
+
+
+
+
+// @media only screen and (max-width: 440px) {
+	
+// 		.container {
+// 			position:relative;
+// 			top:-100px;
+
+// 		}
+	
+
+// }

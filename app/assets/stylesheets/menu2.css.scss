@@ -31,6 +31,7 @@
 		color:white;
 		font-weight:900;
 		margin-bottom:5px;
+    // margin-top:200px;
 		border:solid black 1px;
 	}
 
@@ -90,6 +91,22 @@
 	}
 
 
+
+// Galaxy S7
+@media only screen and (max-width: 360px) and (max-height: 640px) {
+    
+    .menu-header {
+        margin-top:200px;
+    }
+
+}
+
+
+// @media only screen 
+//    and (max-width: 1440px) 
+//    and (max-height: 2560px) {
+//    /* Styles here */
+// }
 
 
 

@@ -5,9 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Modern Gallery 3</title>
 	<link rel="stylesheet" href="/assets/gallery3.css.scss">
+	<script type="text/javascript" src="/assets/gallery3.js"></script>
 	
 </head>
 <body>
+
+
 
 <div class="bg-for-all">
 
@@ -16,21 +19,39 @@
 	<div class="container">
 		<div class="main-img">
 			<!-- <img src="/assets/img1.jpg" id="current"> -->
-			<img src="https://lh3.googleusercontent.com/dwD37MZ06EGoPY5V-wFxCq2Eact53gx4OewyuB7AMpal8qPuYwpZkWtS2azNOFynredmjuYyBMREe9uljbPtjpckdP5363EpDYr5jflgndCVrduQQbpYOgP3kEoZT4pfxjpVIjOH_Q=w2400" alt="1" id="current">
+			<img class="actualMainImage" src="https://lh3.googleusercontent.com/dwD37MZ06EGoPY5V-wFxCq2Eact53gx4OewyuB7AMpal8qPuYwpZkWtS2azNOFynredmjuYyBMREe9uljbPtjpckdP5363EpDYr5jflgndCVrduQQbpYOgP3kEoZT4pfxjpVIjOH_Q=w2400" alt="1" id="current">
 		</div>
+
+<!-- Image Buttons -->
+
+	<!-- <div id="prev-button"><p>PREV</p></div>
+	<div id="next-button"><p>NEXT</p></div> -->
 
 		<div class="imgs">
 
+	<a id="prev-button" href="javascript:void(0);"><div><p>PREV</p></div></a>
+
 <!-- Mattachine Covers -->
-			<img src="https://lh3.googleusercontent.com/dwD37MZ06EGoPY5V-wFxCq2Eact53gx4OewyuB7AMpal8qPuYwpZkWtS2azNOFynredmjuYyBMREe9uljbPtjpckdP5363EpDYr5jflgndCVrduQQbpYOgP3kEoZT4pfxjpVIjOH_Q=w2400" alt="1">
 
-			<img src="https://lh3.googleusercontent.com/ArOumf0W_OGG7Mo_7SuHhtutNc4JLm7N_Ce0By3ndOMgBbjabl8R5A6W2lOVwYfBqj3Kv5gp0wl7dYbhrKeemuWFxA4jkNDbjzaq_rMtnnY6y_QCxZB0BrGrjmlXaU0C5BM0bJ2BTQ=w2400" alt="2">
 
-			<img src="https://lh3.googleusercontent.com/B7n-6atkDoc1F7cAwAG0BMIFTme1j-GAsmmbXBYOqXPYidn4qoYnLXQ9tlqCQygi-9HsUyalubcsEelSZ4FnKqKF_9MmER9uaW-2C-xVzWUwZNFBeaPm02zMexWQ5QWhUKxUi6zZYQ=w2400" alt="3">
+		
+			<img class="testImage" src="https://lh3.googleusercontent.com/dwD37MZ06EGoPY5V-wFxCq2Eact53gx4OewyuB7AMpal8qPuYwpZkWtS2azNOFynredmjuYyBMREe9uljbPtjpckdP5363EpDYr5jflgndCVrduQQbpYOgP3kEoZT4pfxjpVIjOH_Q=w2400" alt="1">
+		
+		
+			<img class="testImage" src="https://lh3.googleusercontent.com/ArOumf0W_OGG7Mo_7SuHhtutNc4JLm7N_Ce0By3ndOMgBbjabl8R5A6W2lOVwYfBqj3Kv5gp0wl7dYbhrKeemuWFxA4jkNDbjzaq_rMtnnY6y_QCxZB0BrGrjmlXaU0C5BM0bJ2BTQ=w2400" alt="2">
+		
+		
+			<img class="testImage" src="https://lh3.googleusercontent.com/B7n-6atkDoc1F7cAwAG0BMIFTme1j-GAsmmbXBYOqXPYidn4qoYnLXQ9tlqCQygi-9HsUyalubcsEelSZ4FnKqKF_9MmER9uaW-2C-xVzWUwZNFBeaPm02zMexWQ5QWhUKxUi6zZYQ=w2400" alt="3">
+		
 
-			<img src="https://lh3.googleusercontent.com/DYEhJbGlUEa2XsO1cfpqMPwap1UgHizKtyFIquBhaU2niqTBKQZPBspHf5p9zsyhmW423bnSgTkZs08KxaVuGktgz67dnJI0nMEN0aJsL4AjXvTTNDUtxYtf5KGo_L8U_m5cQv4Ajg=w2400" alt="4">
+			<img class="testImage" src="https://lh3.googleusercontent.com/DYEhJbGlUEa2XsO1cfpqMPwap1UgHizKtyFIquBhaU2niqTBKQZPBspHf5p9zsyhmW423bnSgTkZs08KxaVuGktgz67dnJI0nMEN0aJsL4AjXvTTNDUtxYtf5KGo_L8U_m5cQv4Ajg=w2400" alt="4">
 
-			<img src="https://lh3.googleusercontent.com/ACUE4S4iWu2p-6msfuQWmGvogx-xGdj-trJ6d1uSZD1Z94i2T1KkeiYM3JFCiU36R5elB5ShfeAD0iyKctdpUCsmPjzs2Wdo4dhNJJPxP7XEkdYxgVotpXkWcmdewvNP5aUJOYL0VA=w2400" alt="5">
+			<img class="testImage" src="https://lh3.googleusercontent.com/ACUE4S4iWu2p-6msfuQWmGvogx-xGdj-trJ6d1uSZD1Z94i2T1KkeiYM3JFCiU36R5elB5ShfeAD0iyKctdpUCsmPjzs2Wdo4dhNJJPxP7XEkdYxgVotpXkWcmdewvNP5aUJOYL0VA=w2400" alt="5">
+
+			<!-- Next Button -->
+			<a id="next-button" href="javascript:void(0);"><div><p>NEXT</p></div></a>
+
+	
 
 			<img src="https://lh3.googleusercontent.com/Uj4agP3-XGL9hRwgmyX3kHm83PgyAGp_LNMmAriKXgfgOHA9Z4X4V7r-TBb4OkxROv8Mxmouj-YVCM5IvGVBIYOPNAYW1PLSrrazyntoz6exxFs7b9ZiV-5im43a2INRzZYViYU7NQ=w2400" alt="6">
 
@@ -123,7 +144,7 @@
 
 
 
-
+<!-- 
 <script>
 
 	// Example of ES6 Destructuring. This can be used instead of line 41 and 42. Saves 1 line of code. 
@@ -134,5 +155,5 @@
 
 	imgs.forEach(img => img.addEventListener('click', e => (current.src = e.target.src)));
 	
-</script>
+</script> -->
 

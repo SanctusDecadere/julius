@@ -5,38 +5,37 @@
 		padding-bottom:50px;
 	}
 
-	#arrow-left {
-		float:left;
-		width:50px;
-		height:50px;
-		background-color:green;
-		color:black;
-		font-weight:bold;
-		text-align:center;
-		border:solid black 2px;
+	// #arrow-left {
+	// 	float:left;
+	// 	width:50px;
+	// 	height:50px;
+	// 	background-color:green;
+	// 	color:black;
+	// 	font-weight:bold;
+	// 	text-align:center;
+	// 	border:solid black 2px;
 
-		p {
-			font-size:14px;
-			padding-top:10px;
-		}
-	}
+	// 	p {
+	// 		font-size:14px;
+	// 		padding-top:10px;
+	// 	}
+	// }
 
-	#arrow-right {
-		// position:relative;
-		float:right;
-		width:50px;
-		height:50px;
-		background-color:green;
-		color:black;
-		font-weight:bold;
-		text-align:center;
-		border:solid black 2px;
+	// #arrow-right {
+	// 	float:right;
+	// 	width:50px;
+	// 	height:50px;
+	// 	background-color:green;
+	// 	color:black;
+	// 	font-weight:bold;
+	// 	text-align:center;
+	// 	border:solid black 2px;
 
-		p {
-			font-size:14px;
-			padding-top:10px;
-		}
-	}
+	// 	p {
+	// 		font-size:14px;
+	// 		padding-top:10px;
+	// 	}
+	// }
 
 	.bg-for-all {
 		background-image:url("https://lh3.googleusercontent.com/7u7qFZbbEgMT0w8b6Sg_9wfUE1eCBxOs9D-D_Iou-DP9hcDJ8gBbeCE5jl5uSiuClUYDqJwtGxxVQytcYYR8JIDnt-hkROcPfLVSg4HaAZ4rS6R3oqOMkI6c9jO1uUSTkuLQ4TDhUA=w2400");
@@ -48,20 +47,35 @@
 		background:transparent;
 	}
 
-	.main-img img {
+	// .container img:nth-child(1) {
+	// 	height:420px;
+	// 	width:auto;
+	// 	display: block;
+ //    	margin-left: auto;
+ //    	margin-right: auto;
+ //    	padding-bottom:5px;
+ //    	border:black solid 3px;
+	// }
+
+	#current {
+		// border:solid red 3px;
+	}
+
+	.main-img {
+		margin-top:10px;
 		height:420px;
 		width:auto;
-		// width:375px;
 		display: block;
     	margin-left: auto;
     	margin-right: auto;
-    	padding-bottom:5px;
-    	border:black solid 3px;
+    	padding-bottom:0px;
+    	border:green solid 2px;
+    	margin-bottom:10px;
 	}
 
 	.imgs img {
 		width:100%;
-		border:black solid 3px;
+		border:green solid 2px;
 		height:100px;
 	}
 
@@ -69,37 +83,23 @@
 		display:grid;
 		grid-template-columns:repeat(7, 1fr);
 		grid-gap:5px;
-		height:350px;
+		height:315px;
 		overflow:scroll;
 		border-top:green solid 2px;
 		max-width:650px;
 		margin-left:auto;
 		margin-right:auto;
+		margin-bottom:10px;
 	}
 
-
-
-
+// *********************************************
 	@media only screen and (max-width: 600px) {
 
-
 	.main-img img {
-		// height:420px;
-		// width:auto;
-		// Moved with down from 375px to avoid right side of image going over.
 		width:325px;
-		// display: block;
-    	// margin-left: auto;
-    	// margin-right: auto;
-    	// padding-bottom:5px;
-    	// border:black solid 3px;
 	}
 
-
-
 		.imgs img {
-			// width:100%;
-			// border:black solid 3px;
 			height:50px;;
 		}
 

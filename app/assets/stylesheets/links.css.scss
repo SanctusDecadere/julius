@@ -55,8 +55,13 @@ body {
 
 	img {
 		padding-bottom:10px;
-		width:100%;
+		// width:100%;
+		max-width:60%;
 		height: auto;
+		// border-radius:20px 0px 5px 5px;
+		border-radius:10px;
+		// border:solid orange 1px;
+		border-top:solid purple 1px;
 	}
 }
 
@@ -114,7 +119,6 @@ body {
 
 		img {
 			padding-bottom:10px;
-			// opacity:0.7;
 			width:100%;
 			height: auto;
 		}

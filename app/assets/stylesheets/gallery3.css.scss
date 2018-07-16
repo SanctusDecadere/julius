@@ -45,6 +45,7 @@
 	.container {
 		max-width:100%;
 		background:transparent;
+		// background-color:red;
 	}
 
 	// .container img:nth-child(1) {
@@ -95,8 +96,16 @@
 // *********************************************
 	@media only screen and (max-width: 600px) {
 
+	.container .main-img {
+			max-width:355px;
+	}
+
 	.main-img img {
-		width:325px;
+
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+
 	}
 
 		.imgs img {

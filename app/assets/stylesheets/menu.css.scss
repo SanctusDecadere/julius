@@ -1,275 +1,109 @@
-// html {
-// 	background-color:transparent;
-// }
-
-
-
-	body {
-		background-color:black;
-	}
-
-
-	.wrap {
-
-		background-image:url("https://lh3.googleusercontent.com/Fa22FKzj0SbXoc6yV7e0mADCVpNeKcmEYxZ4A_ja8nGEjAkJ8WhQjr5eVUfKOm5D-h2xeGOg6thIvIqLYQye9xF5SyaM7FUwhDb4sFBTtTAwV7xFxzRNe3EShLKJ0JuJbO0YpDgJ7g=w2400");
-		background-repeat:no-repeat;
-		background-position:center;
-		background-size:cover;
-		// background-size:100% 100%;
-		// background-size: auto 100%;
-
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 2px;
-		margin: 1px;
-		background-color:black;
-	}
-
-/*	.container {
-		position: relative;
-		border: solid red 3px;
-		margin: 4px;
-		top: 80px;
-	}*/
-
-	.food-menu {
-		position: relative;
-		border: solid green 3px;
-		margin: 4px;
-		top: 80px;
-	}
-
-	.food-menu ul li a {
-		position: relative;
-		text-decoration: none;
-		font-size: 14px;
-		color: white;
-		font-weight: 900;
-		text-shadow: 2px 2px red;
-		top: -80px;
-		right:20px;
-
-
-	}
-
-	.food-menu ul li a img {
-		margin:4px;
-		padding:2px;
-		/*padding: 2px 0px 2px 2px;*/
-		width:80px;
-		height:80px;
-		/*visibility: hidden;*/
-		border-radius: 10px;
-		/*margin: auto;*/
-		/*float: right;*/
-		/*clear: right;*/
-
-	}
-
-	.food-menu ul li a:hover img {
-		visibility:visible;
-		border: solid green 2px;
-	}
-
-/*Centers menu items text in middle over image. */
-
-	.centered { 
-		-webkit-transform: translate(-50%,-50%);
-  		transform: translate(-50%,-50%);
-  		position: absolute;
-  		top: 50%;
-  		left: 50%;
-	}
-/* Aligns food items menu on the left */
-	.food-container {
-		position: relative;
-		margin: 4px;
-		top: 100px;
-		text-align: center;
-
-	}
-
-	.music-container {
-		position: relative;
-		margin: 4px;
-		top: 100px;
-		text-align: center;
-
-	}
-
-	.drink-menu {
-		position: relative;
-		border: solid green 3px;
-		margin: 4px;
-		top: 80px;
-	}
-
-
-
-	.drink-menu ul li a {
-		position: relative;
-		text-decoration: none;
-		font-size: 14px;
-		color: white;
-		font-weight: 900;
-		text-shadow: 2px 2px red;
-		top: -80px;
-		right:20px;
-
-
-	}
-
-	.drink-menu ul li a img {
-		margin:4px;
-		padding:2px;
-		width:80px;
-		height:80px;
-		/*visibility: hidden;*/
-		border-radius: 10px;
-	}
-
-	.drink-menu ul li a:hover img {
-		visibility:visible;
-		border: solid green 2px;
-		/*text-align: center;*/
-	}
-
-
-
-
-
-	.regular-drink-menu {
-		position: absolute;
-		/*bottom: 30px;*/
-		background-color: black;
-		margin: 10px;
-		text-align: center;
-		padding: 20px;
-		border: solid green 2px;
-	}
-
-	.regular-drink-menu > h1 {
-		color: orange;
-		font-size: 20px;
-		font-weight: bold;
-		text-align: center;
-	}
-
-	.regular-drink-menu > p {
-		color: green;
-		font-size: 16px;
-		font-weight: bold;
-	}
-
-	.happy-hour-container {
-		position: relative;
-		/*border: solid #210f09 3px;*/
-		margin: 5px;
-		top: 90px;
-	}
-
-
-
-@media screen and (max-width: 600px) {
-
-		.wrap {
-			/*display: grid;*/
-			grid-template-columns: 1fr 1fr 1fr;
-			/*grid-gap: 2px;*/
-			/*margin: 1px;*/
-			background-color: black;
-	}
-
-		.container {
-			/*position:relative;*/
-			/*border: solid green 3px;*/
-			/*border: solid #210f09 3px;*/
-			/*margin: 4px;*/
-			top: 100px;
-			/*text-align: center;**/
-	}
-
-		.happy-hour-container {
-			grid-column:1;
-			grid-row:1/2;
-			/*position: relative;*/
-			/*border: solid #210f09 3px;*/
-			/*margin: 5px;*/
-			/*top: 90px;*/
-	}
-
-		.food-menu {
-			grid-column:2;
-			top: 100px;
-		}
-
-		.drink-menu {
-			grid-column:3;
-			top: 100px;
-		}
+body {
+	background-color:black;
 
 }
 
 
 
-
-
-
-
-@media screen and (max-width: 445px) {
-
-
-
-		.wrap {
-			/*display: grid;*/
-			grid-template-columns: 1fr;
-			/*grid-gap: 2px;*/
-			/*margin: 1px;*/
-			background-color:black;
-	}
-
-		.container {
-			/*position:relative;*/
-			/*border: solid green 3px;*/
-			/*border: solid #210f09 3px;*/
-			/*margin: 4px;*/
-			top: 100px;
-			/*text-align: center;**/
-	}
-
-		.happy-hour-container {
-			grid-column:1;
-			grid-row:2/2;
-			/*position: relative;*/
-			/*border: solid #210f09 3px;*/
-			/*margin: 5px;*/
-			top: 150px;
-			
-
+	#wrap {
 
 	}
 
-		.food-menu {
-			grid-column:1;
-			top: 160px;
-		}
+	#container {
+		position:relative;
+		top:100px;
+		border:solid grey 2px;
+		border-radius: 10px;
+		padding-top:20px;
+		background-color:black;
+		max-width:400px;
+		/*min-height:565px;*/
+		/*max-height:200px;*/
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:90px;
 
-		.drink-menu {
-			grid-column:2;
-			top: 160px;
-		}
-
-		.regular-drink-menu {
-		/*position: absolute;*/
-		
-		/*background-color: black;*/
-		/*margin: 10px;*/
-		width: 350px;
-
-		/*text-align: center;*/
-		/*padding: 20px;*/
-		/*border: solid green 2px;*/
 	}
 
-}
+	#menu {
+		color:#b1801d;
+		/*font-family: 'Permanent Marker', cursive;*/
+		font-family: 'Caveat', cursive;
+		/*font-family: 'Lato', sans-serif;*/
+		font-size:18px;
 
+	}
+
+	#header {
+		text-align:center;
+		font-size:50px;
+		font-family: 'Rye', cursive;
+	}
+
+	li {
+		line-height: 30px;
+	}
+
+	ul li:nth-child(2) {
+		text-indent: 10px;
+	}
+
+	ul li:nth-child(3) {
+		text-indent: 10px;
+	}
+
+	ul li:nth-child(9) {
+		text-indent: 10px;
+	}
+
+	ul li:nth-child(10) {
+		text-indent: 10px;
+	}
+
+	li {
+
+		list-style-type:none;
+	}
+
+
+	#wavy-line {
+            margin-bottom:-430px;
+            margin-top:-55px;
+            position:relative;
+            /*width:100%;*/
+            margin-left:auto;
+            margin-right:auto;
+            width:90%;
+            /*height:100%;*/
+            height:540px;
+            }
+    
+            #wavy-line:after{
+            content:"";
+            position:absolute;
+            width:50%;
+            height:100px;
+            border-top:1px solid #b1801d;
+            border-radius:50%;
+            left:50%;
+            top:10%;
+            }
+
+            #wavy-line:before{
+            content:"";
+            position:absolute;
+            width:50%;
+            height:100px;
+            border-bottom:1px solid #b1801d;
+            border-radius:50%;
+            left:.2%;
+            margin-top:-1%;
+            }
+
+            /*animation: AnimationName 30s ease infinite;*/
+
+            @keyframes AnimationName { 
+                0%{background-position:43% 0%}
+                50%{background-position:58% 100%}
+                100%{background-position:43% 0%}
+            }

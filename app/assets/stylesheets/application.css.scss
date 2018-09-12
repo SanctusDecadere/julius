@@ -179,7 +179,8 @@ a:link {
 // }
 
 
-
+// *********************************************************
+// *********************************************************
 // Mobile Media Queries
 
 @media screen and (max-width: 670px) {  
@@ -196,8 +197,8 @@ a:link {
 
 }
 
-
-
+// *********************************************************
+// *********************************************************
 @media screen and (max-width: 700px) {
 // makes all the links dissapear except for the julius home logo link
   .nav-item > a:not(:first-child) {display: none;}
@@ -277,8 +278,8 @@ a:link {
 
 
 
-
-
+// *********************************************************
+// *********************************************************
 // Media Query small.Adds address to mobile nav bar small
 
 @media screen and (max-width: 500px) {
@@ -296,8 +297,12 @@ a:link {
     	color:white;
   }
 
+  // .nav-item {
+  //   text-align:center;
+  // }
 
-    .nav-item a:nth-child(8) {
+
+  .nav-item a:nth-child(8) {
     margin-top:-25px;
   }
 

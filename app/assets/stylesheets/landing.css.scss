@@ -4,8 +4,6 @@ body {
 	background-color:black;
 }
 
-
-
 // Social Media Icons. facebook, instagram, twitter.
 .social-media {
 	// color:white;
@@ -19,6 +17,8 @@ body {
 	li {
 		list-style:none;
 	}
+
+
 
 	a:nth-child(1) {
 
@@ -37,23 +37,43 @@ body {
 	}
 
 
-	.fa {
+	.fa-facebook {
 		position:relative;
-		// color:#262626;
+		// background-color:#262626;
+		background-color:#3b5998;
 		color:white;
 		transition:1s;
 	}
+
+	.fa-twitter {
+		position:relative;
+		background-color:#0084b4;
+		color:white;
+		transition:1s;
+		width:30px;
+		border-radius:50px;
+	}
+
+	.fa-instagram {
+		position:relative;
+		// background-color:#262626;
+		// background-color:transparent;
+		// background-color:orange;
+		color:white;
+		transition:1s;
+	}
+
 
 	a:hover .fa {
 		transform: rotateY(180deg);
 	}
 }
 
+// **********
 
 
 
-
-
+// Twitter #0084b4
 
 
 

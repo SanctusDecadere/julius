@@ -1,10 +1,10 @@
 function myFunction() {
 	
     var x = document.getElementById("myNavitem");
-    if (x.className === "nav-item") {
+    if (x.className === "navbar-links") {
         x.className += " responsive";
     } else {
-        x.className = "nav-item";
+        x.className = "navbar-links";
     }
 
 

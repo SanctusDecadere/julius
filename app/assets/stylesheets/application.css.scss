@@ -3,19 +3,16 @@
 
 
 html {
-	background-color:transparent;
-	// z-index: 0;
 
+	background-color:transparent;
 }
 
 body {
 	margin: 0;
   padding: 0;
-  // font-family: sans-serif;
 }
 
 .front-page > img {
-	
 	position: relative;
 	top: 0px;
 	max-width:100%;
@@ -23,9 +20,18 @@ body {
 	z-index:0;
 }
 
-// .top-nav-align a {
-//   text-align:center;
-// }
+
+  // Nav Bar Julius Logo
+.julius-logo-icon {
+    position: relative;
+    float:left;
+    border: solid green 1px;
+    width: 50px;
+    height: 50px;
+    margin:3px;
+    z-index:1;
+  }
+
 
 
 #links-link {
@@ -40,7 +46,6 @@ body {
 	color: red;
 }
 
-
 #about {
 	color: yellow;
 }
@@ -53,14 +58,78 @@ body {
 	color: blue;
 }
 
-#footer li {
-	display: inline;
+
+a:link {
+    color: green;
+}
+
+// Entire Navbar
+.nav-item {
+
+	list-style: none;
+	// justify-content: space-around;
+	position: absolute;
+	background:linear-gradient(90deg,
+		rgba(10, 30, 10, 0.5)0%,
+		rgba(0, 22, 0, 1.2)25%,
+		rgba(0, 0, 0, 0.2)75%,
+		rgba(0, 40, 0, 0)100%);
+	box-shadow: 0px 0px 25px rgba(0,0,0,1.1),
+	inset 0px 0px 10px rgba(25, 144, 25, 1.6);
+	z-index:1;
+	width:100%;
+  text-align:center;
+}
+
+.navbar-links {
+  margin-top:20px;
+}
+
+
+.navbar-links a {
+  color: lightgreen;
+  display: inline;
+  // This padding sets the mobile navbar logo padding
+  padding: 20px;
+  text-decoration:none;
+  font-family: 'Krona One';
+  width:100%;
+  text-align:center;
+  font-weight: bold;
+  font-size: 13px;
+  z-index: 1;
+
+}
+
+.nav-item a:first-child {
+	padding:0px;
+	margin:0px;
+}
+
+.navbar-links > .icon {
+	display: none;
+}
+
+
+// Is later set in media query for mobile below
+.nav-address {
+	display:none;
+}
+
+//FOOTER FOOTER FOOTER FOOTER
+// *****************************
+
+
+.footer > li > a {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .footer {
-	padding: 8px;
-	font-size: 16px;
-	position: fixed;
+  padding: 8px;
+  font-size: 16px;
+  position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -72,182 +141,52 @@ body {
     box-shadow: 0px 500px 0px 500px #000;
 }
 
-.footer > li > a {
-	color: black;
-	font-weight: 600;
-	font-size: 14px;
+
+#footer li {
+  display: inline;
 }
 
-
-a:link {
-    color: green;
-}
-
-.nav-item {
-	list-style: none;
-	margin: 2px;
-	padding: 0px;
-	justify-content: space-around;
-	position: absolute;
-
-	background:linear-gradient(90deg,
-		rgba(10, 30, 10, 0.5)0%,
-		rgba(0, 22, 0, 1.2)25%,
-		rgba(0, 0, 0, 0.2)75%,
-		// rgba(255, 255, 255, 1.0)75%),
-		rgba(0, 40, 0, 0)100%);
-	box-shadow: 0px 0px 25px rgba(0,0,0,1.1),
-	inset 0px 0px 10px rgba(25, 144, 25, 1.6);
-	
-	z-index:1;
-	width:100%;
-  // text-align:center;
-}
-
-// .nav-item img {
-//   border:solid green 1px;
-//   position:relative;
-//   left:0px;
-//   width:40px;
-//   height:40px;
-//   padding:5px;
-//   margin:0;
-// }
-
-// .home-button {
-//   border:solid red 5px;
-// }
-
-// .nav-item a:nth-child(8) {
-//   text-align:left;
-// }
-
-// Hamburger Icon
-.nav-item > a {
-	position: relative;
-	color: lightgreen;
-	display: inline;
-	// This padding sets the mobile navbar logo padding
-	padding: 20px;
-	text-decoration:none;
-	font-family: 'Krona One';
-	width:100%;
-	text-align:center;
-	font-weight: bold;
-	font-size: 13px;
-  // font-size:20px;
-	z-index: 1;
-}
-
-.nav-item a:first-child {
-	padding:0px;
-	margin:0px;
-}
-
-// Nav Bar Julius Logo
-.nav-item > a > img {
-	left:0px;
-	margin:7px;
-	position: relative;
-	border: solid green 1px;
-	width: 50px;
-	height: 50px;
-	position: relative;
-	z-index: 1;
-}
-
-.nav-item > .icon {
-	display: none;
-}
-
-// Hamburger Button
-.nav-item a:nth-child(8) {
-  color:lightgreen;
-  font-size:25px;
-  text-decoration:none;
-  margin-top:-10px;
-}
-
-// Is later set in media query for mobile below
-.nav-address {
-	display:none;
-}
-
-
-// .icon a:nth-child(7) {
-//   background-color:orange;
-// }
-
-
-// *********************************************************
-// *********************************************************
-// Mobile Media Queries
-
-@media screen and (max-width: 670px) {  
-
-
-  .nav-item > a:not(:first-child) {
-    display: none;
-  }
-
-  .nav-item > a:first-child {
-    padding:0px;
-    margin:0px;
-  }
-
-}
 
 // *********************************************************
 // *********************************************************
 @media screen and (max-width: 700px) {
 // makes all the links dissapear except for the julius home logo link
-  .nav-item > a:not(:first-child) {display: none;}
+  
+  .navbar-links > a {display: none;}
 
-  .nav-item > a.icon {
-    top: 10px;
-    right: 10px;
+  // .navbar-links {
+  //   margin-top:40px;
+  // }
+
+  .navbar-links > a.icon {
     position: absolute;
-    float:right;
+    font-size:25px;
+    top: -10px;
     display: block;
     text-align: right;
   }
 
-// Adds address to mobile nav bar
-  .nav-address {
-    position: relative;
-    font-size: 10px;
-    display: inline-block;
-    background:transparent;
-    // background-color:red;
-    color:white;
-  }
-
-  .nav-address p {
-    // position:relative;
-    // background-color:red;
-    // max-width:calc(100% - -100px);
-    
-
-  }
-
-
+// **********************
+// ************************
 // Julius Location Address on Nav
   .nav-address {
-  	padding: 15px;
-  	position: relative;
-  	left: 5%;
-  	font-size: 12px;
+    max-width:100px;
+    margin-top:20px;
+    margin-bottom:-10px;
+    position: relative;
+  	font-size: 4px;
+    font-weight:900;
   	display: inline-block;
   	color:white;
-
+    transform:scale(2.5);
   }
 
-  .nav-item.responsive {
-  	position: relative;
-  	background:black;
+  // .navbar-links.responsive {
+  // 	position: relative;
+  // 	background:black;
+  // }
 
-  }
-  .nav-item.responsive a.icon {
+  .navbar-links.responsive a.icon {
     position: absolute;
     right: 0px;
     top: 0;
@@ -255,73 +194,20 @@ a:link {
   }
 
   // This rule effects all links texts in the responsive version so they align left.
-  .nav-item.responsive a {
+  .navbar-links.responsive a {
     float: none;
+    // margin-top:2px;
     display:inline-block;
     text-align:left;
     background-color:black;
-
     z-index: 0;
 
   }
 
-// Styling for Julius Logo Image
-  .nav-item.responsive > a:first-child {
-  	float: none;
-  	display: inline-block;
-  	text-align: left;
-  	left:10px;
-  	z-index:1;
-  }
-
 }
 
 
-
 // *********************************************************
-// *********************************************************
-// Media Query small.Adds address to mobile nav bar small
-
-@media screen and (max-width: 500px) {
-
-  .nav-address {
-    	padding: 10px;
-    	position: relative;
-    	// left:10%;
-
-    	font-size: 7px;
-    	color: red;
-    	display: inline-block;
-    	background:transparent;
-          // background-color:red;
-    	color:white;
-  }
-
-  // .nav-item {
-  //   text-align:center;
-  // }
-
-
-  .nav-item a:nth-child(8) {
-    margin-top:-25px;
-  }
-
-
-    // Nav Bar Julius Logo
-  .nav-item > a > img {
-  	position: relative;
-  	margin:0px;
-  	padding:0px;
-  	top:1px;
-  	left:2px;
-  	border: solid green 1px;
-  	width: 45px;
-  	height: 45px;
-  	position: relative;
-  	z-index: 1;
-  }
-
-}
 
 
 

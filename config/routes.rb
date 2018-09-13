@@ -29,10 +29,6 @@ Rails.application.routes.draw do
 
 	get "welcome/links"
 
-	get "welcome/calendar"
-
-	get "welcome/calendar2"
-
 	get "welcome/gallery3"
 
 	get "welcome/menu2"

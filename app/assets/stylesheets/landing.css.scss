@@ -20,12 +20,12 @@ body {
 	}
 
 	.social-media li a {
-		width:80px;
-		height:80px;
+		width:40px;
+		height:40px;
 		background: #fff;
 		text-align:center;
-		line-height:80px;
-		font-size:35px;
+		line-height:35px;
+		font-size:25px;
 		margin: 0px 10px;
 		display:block;
 		border-radius:50px;
@@ -34,6 +34,28 @@ body {
 		border:solid 3px #fff;
 		// z-index:1;
 	}
+
+	// ***************
+	// ***************
+	
+// //Facebook
+// .social-media li:nth-child(1) a {
+// 	background:#3b5999;
+// }
+
+// //Twitter
+// .social-media li:nth-child(2) a {
+// 	background:#55acee;
+// }
+
+// //Instagram
+// .social-media li:nth-child(3) a {
+// 	background:#e4405f;
+// }
+
+
+	// ***************
+	// ***************
 
 	.social-media li a .fa {
 		position:relative;
@@ -226,3 +248,31 @@ body {
 		width:100px;
 		/*height: 100px;*/
 	}
+
+
+
+@media only screen and (max-width: 600px) {
+	
+	//Facebook
+	.social-media li:nth-child(1) a {
+		background:#3b5999;
+	}
+
+	//Twitter
+	.social-media li:nth-child(2) a {
+		background:#55acee;
+	}
+
+	//Instagram
+	.social-media li:nth-child(3) a {
+		background:#e4405f;
+	}
+
+
+	.social-media li a .fa {
+		color:#fff;
+	}
+
+}
+
+

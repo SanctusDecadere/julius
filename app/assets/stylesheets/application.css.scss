@@ -111,6 +111,8 @@ a:link {
 }
 
 
+
+
 // Is later set in media query for mobile below
 .nav-address {
 	display:none;
@@ -149,7 +151,7 @@ a:link {
 
 // *********************************************************
 // *********************************************************
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 // makes all the links dissapear except for the julius home logo link
   
   .navbar-links > a {display: none;}
@@ -203,6 +205,37 @@ a:link {
     z-index: 0;
 
   }
+
+
+
+  .navbar-links > .icon:after {
+    text-decoration:none;
+    content:"\f063";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color:lightgreen;
+    font-size: 24px;
+    padding-right: 0.5em;
+}
+
+.navbar-links > .icon {
+  text-decoration:none;
+}
+
+  .navbar-links > .icon:hover:after {
+    color:green;
+
+  }
+
+
+
+
+
+
+
+
 
 }
 

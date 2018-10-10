@@ -1,9 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
 html {
-
 	background-color:transparent;
 }
 
@@ -20,7 +18,6 @@ body {
 	z-index:0;
 }
 
-
   // Nav Bar Julius Logo
 .julius-logo-icon {
     position: relative;
@@ -31,8 +28,6 @@ body {
     margin:3px;
     z-index:1;
   }
-
-
 
 #links-link {
 	color: #4B0082;
@@ -65,9 +60,7 @@ a:link {
 
 // Entire Navbar
 .nav-item {
-
 	list-style: none;
-	// justify-content: space-around;
 	position: absolute;
 	background:linear-gradient(90deg,
 		rgba(10, 30, 10, 0.5)0%,
@@ -110,14 +103,6 @@ a:link {
 	display: none;
 }
 
-
-
-
-// Is later set in media query for mobile below
-.nav-address {
-	display:none;
-}
-
 //FOOTER FOOTER FOOTER FOOTER
 // *****************************
 
@@ -151,14 +136,11 @@ a:link {
 
 // *********************************************************
 // *********************************************************
-@media screen and (max-width: 600px) {
+// Was 600 previously
+@media screen and (max-width: 660px) {
 // makes all the links dissapear except for the julius home logo link
   
   .navbar-links > a {display: none;}
-
-  // .navbar-links {
-  //   margin-top:40px;
-  // }
 
   .navbar-links > a.icon {
     position: absolute;
@@ -166,39 +148,21 @@ a:link {
     top: -10px;
     display: block;
     text-align: right;
-  }
 
+  }
 // **********************
-// ************************
-// Julius Location Address on Nav
-  .nav-address {
-    max-width:100px;
-    margin-top:20px;
-    margin-bottom:-10px;
-    position: relative;
-  	font-size: 4px;
-    font-weight:900;
-  	display: inline-block;
-  	color:white;
-    transform:scale(2.5);
-  }
-
-  // .navbar-links.responsive {
-  // 	position: relative;
-  // 	background:black;
-  // }
-
+// ***********************Responsive**************
   .navbar-links.responsive a.icon {
     position: absolute;
     right: 0px;
     top: 0;
     text-align: right;
+
   }
 
   // This rule effects all links texts in the responsive version so they align left.
   .navbar-links.responsive a {
     float: none;
-    // margin-top:2px;
     display:inline-block;
     text-align:left;
     background-color:black;
@@ -206,7 +170,11 @@ a:link {
 
   }
 
+  .navbar-links.responsive a {
+          border-bottom:solid 1px grey;
 
+  }
+// ***********************Responsive**************
 
   .navbar-links > .icon:after {
     text-decoration:none;
@@ -215,26 +183,23 @@ a:link {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color:lightgreen;
+    color:green;
     font-size: 24px;
     padding-right: 0.5em;
+    border:solid lightgreen 1px;
+    padding:4px;
+    border-radius:50px;
 }
 
 .navbar-links > .icon {
   text-decoration:none;
+  
 }
 
   .navbar-links > .icon:hover:after {
-    color:green;
+    color:lightgreen;
 
   }
-
-
-
-
-
-
-
 
 
 }
